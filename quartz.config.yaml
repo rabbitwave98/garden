@@ -11,6 +11,8 @@ configuration:
     - private
     - templates
     - .obsidian
+    - config
+    - gardening
   theme:
     fontOrigin: googleFonts
     cdnCaching: true
