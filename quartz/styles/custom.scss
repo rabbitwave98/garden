@@ -32571,3 +32571,44 @@ body.rtm-cs-monochromatic-colors-flipped {
 .rtm-font-press-start-2p {
 	--rtm-font: "Press Start 2P";
 }
+
+&:root {
+	--retroma-obsidian-theme@@interactive-accent@@light: #555EEE;
+	--retroma-obsidian-theme@@nav-btn-style-selection: default;
+	--retroma-obsidian-theme@@rtm-btn-3d-light-color: #FFFFFF;
+	--retroma-obsidian-theme@@rtm-btn-3d-shadow-color: #116190;
+	--retroma-obsidian-theme@@rtm-btn-3d-shadow-lightness: 0.11;
+	--retroma-obsidian-theme@@rtm-btn-3d-shadow-opacity: 0.49;
+	--retroma-obsidian-theme@@rtm-btn-bg-normal@@light: #E3E5F2;
+	--retroma-obsidian-theme@@rtm-btn-outline-color@@light: #16A6EC;
+	--retroma-obsidian-theme@@rtm-btn-outline-focus-color@@light: #16A6EC;
+	--retroma-obsidian-theme@@rtm-btn-outline-focus-style: solid;
+	--retroma-obsidian-theme@@rtm-btn-outline-style: solid;
+	--retroma-obsidian-theme@@rtm-chroma-lightmode-accent: 0.44;
+	--retroma-obsidian-theme@@rtm-crt-overlay-inner-vignette-color@@dark: #FFFFFF00;
+	--retroma-obsidian-theme@@rtm-crt-overlay-inner-vignette-color@@light: #FFFFFF00;
+	--retroma-obsidian-theme@@rtm-crt-overlay-outer-vignette-color@@dark: #FFFFFF00;
+	--retroma-obsidian-theme@@rtm-crt-overlay-outer-vignette-color@@light: #FFFFFF00;
+	--retroma-obsidian-theme@@rtm-crt-overlay-scanline-1-color@@light: #784EE861;
+	--retroma-obsidian-theme@@rtm-crt-overlay-scanline-width: 2;
+	--retroma-obsidian-theme@@rtm-icon-active-color@@light: #16A6EC;
+	--retroma-obsidian-theme@@rtm-icon-color@@light: #5E53EE;
+	--retroma-obsidian-theme@@rtm-interface-radius: 8;
+	--retroma-obsidian-theme@@rtm-lightness-lightmode-btn: 0.7;
+	--retroma-obsidian-theme@@rtm-pixel-icon-stroke-width: 2.5;
+	--retroma-obsidian-theme@@rtm-ss-crt-overlay-animation: true;
+	--retroma-obsidian-theme@@rtm-ss-crt-overlay: true;
+	--retroma-obsidian-theme@@rtm-ss-pixel-icon: true;
+	--retroma-obsidian-theme@@rtm-ss-txt-glow: false;
+	--retroma-obsidian-theme@@rtm-ss-workspace-vault-profile-container: true;
+	--retroma-obsidian-theme@@rtm-ss-zen-mode-pin-left-split: false;
+	--retroma-obsidian-theme@@rtm-ss-zen-mode-pin-statusbar: true;
+	--retroma-obsidian-theme@@rtm-ss-zen-mode-pin-titlebar: true;
+	--retroma-obsidian-theme@@rtm-ss-zen-mode: false;
+	--retroma-obsidian-theme@@rtm-txt-accent@@light: #16161D;
+	--retroma-obsidian-theme@@rtm-workspace-root-bg@@light: #FFFFFF;
+	--retroma-obsidian-theme@@rtm-zen-mode-fade-in: 5.24;
+	--retroma-obsidian-theme@@rtm-zen-mode-opacity: 0.14;
+	--retroma-obsidian-theme@@workspace-color-scheme: rtm-cs-monochromatic-colors;
+	--retroma-obsidian-theme@@workspace-font-selection: system-ui;
+}
