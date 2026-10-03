@@ -167,7 +167,7 @@ plugins:
     enabled: true
     layout:
       position: right
-      priority: 10
+      priority: 0
   - source: "@quartz-community/search"
     enabled: true
     layout:
@@ -273,6 +273,22 @@ plugins:
       enableInteraction: true
       darkMode: auto
       exportPadding: 20
+    order: 50
+  - source: quartz-navbar
+    enabled: true
+    order: 50
+    options: {}
+  - source: github:hyodoarch/quartz-auto-link-card-enhanced
+    enabled: true
+    order: 50
+    options: {}
+  - source: github:quartz-plugins/canvas-page
+    enabled: true
+    options:
+      enableInteraction: true
+      initialZoom: 1
+      minZoom: 0.1
+      maxZoom: 5
     order: 50
 layout:
   groups:

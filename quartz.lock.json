@@ -1,0 +1,17 @@
+{
+  "version": "1.0.0",
+  "plugins": {
+    "canvas-page": {
+      "source": "github:quartz-plugins/canvas-page",
+      "resolved": "https://github.com/quartz-plugins/canvas-page.git",
+      "commit": "69f0997e8aa99dc4fe18c26128dc937f138a972d",
+      "installedAt": "2026-10-03T01:35:49.576Z"
+    },
+    "quartz-auto-link-card-enhanced": {
+      "source": "github:hyodoarch/quartz-auto-link-card-enhanced",
+      "resolved": "https://github.com/hyodoarch/quartz-auto-link-card-enhanced.git",
+      "commit": "5160936f149f77785cfb9568f1b3574fb11e8147",
+      "installedAt": "2026-10-03T01:35:23.009Z"
+    }
+  }
+}
