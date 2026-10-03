@@ -1,5 +1,5 @@
 ---
-title: Welcome to Quartz
+title: rabbit was here
 ---
 
 This is a blank Quartz installation.
