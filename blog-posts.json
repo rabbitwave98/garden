@@ -1,0 +1,41 @@
+[
+  {
+    "title": "Styling Testbed",
+    "date": "2026-10-09",
+    "tags": [
+      "css"
+    ],
+    "content": "\n# Header 1\n\nthis one does not have the #personal tag.\n\n## Header 2\n\nTest markdown content.\n\n### Header 3\n\n#### Header 4\n\n##### Header 5\n\n###### Header 6\n\n**bold text** \n*italics text using single asterisk*\n_emphasized text using underscore_\n***bold+italics using three asterisks***\n_*italics+bold using underscore and one asterisk*_\n\n**list content**\n- list item 1\n- list item 2\n- list item 3\n\n[link text](/content/posts/test01.md)",
+    "slug": "stylingtestbed"
+  },
+  {
+    "title": "personal 01",
+    "date": "2026-10-09",
+    "tags": [
+      "personal",
+      "diary"
+    ],
+    "content": "\n# Header 1\n\nTest markdown content.\n\n## Header 2\n\nTest markdown content.",
+    "slug": "test01"
+  },
+  {
+    "title": "personal 02",
+    "date": "2026-10-09",
+    "tags": [
+      "personal",
+      "diary"
+    ],
+    "content": "\n# Header 1\n\nTest markdown content.\n\n## Header 2\n\nTest markdown content.",
+    "slug": "test02"
+  },
+  {
+    "title": "finally playing baldur's gate 3",
+    "date": "2026-02-01",
+    "tags": [
+      "gaming",
+      "bg3"
+    ],
+    "content": "\nMan, do I wish I was more into BG3, because that fandom is eating well. I can’t remember ever being all too hyped for it when it first came out and I think I got like… _immediate_ hype fatigue. Or maybe even reactive hype fatigue (except within the first week of release. So… unfairly expedited hype fatigue, maybe.) It’s definitely not a bad game, I actually have a lot of respect for it, I think I just never clicked with it. I’m hoping that with this playthrough, maybe I’ll finally find something to love about it, but it’s one of those things where I looked at all of the primary characters and just didn’t feel a pull to any of them. They’re not bad in any way, I just never really got that spark of, _“Oh my god, I love this little bitch!”_ that I often feel moments before finding a new fictional special interest. \n\n![img](./img/20261009finally%20playing%20baldur's%20gate%203-1.png)\n\n\nSo this time around, I’m playing it heavily modded just to go through the storyline and finally get to know the characters and see if I wind up liking them by the end.\n\nI’ve got them essentially cosplaying my OCs for a little extra dopamine to keep me motivated. Shadowheart is currently cosplaying my OC, Krist, and I low-key love it, though I feel like when I find Karlach, I’m going to swap the Krist cosplay over to her. From what I’ve seen of Karlach, I feel like she and Krist have the most similar personalities.\n\nI turned Tav into Evangeline and Astarion into her twin brother, August. I went into this knowing that Astarion is a bit sassy by nature and figured that’d align well with August, who is also an aristocratic little shit. But holy _fck,_ I did not expect Astarion to be _that catty._ It’s almost too much to see him cosplaying August. One of my friends once suggested that Gortash might be a better fit and I’m low-key thinking maybe I might swap them later, we’ll see.\n\nLast night I played up to the point where they recruit Gale. So far, my party is just Tav, Astarion, Shadowheart, and Gale. Shadowheart is kind of my favorite so far, she just feels the most like a vibe. But I’m also low-key getting tsundere or even yandere vibes. I don’t know much about her storyline yet, I’ve seen spoilers but didn’t care enough to commit them to memory so it’s a spoiler _semi_-free playthrough, somehow.\n\nI think at one point, someone told me the entire Astarion storyline but it really went in one ear and out the other, _rip_.\n\n![img](./img/20261009finally%20playing%20baldur's%20gate%203-2.png)\n\nSomething-something, vampire, his boss sings a musical bit, homeboy’s avoidant-attachment as heck due to trauma from said musical boss guy, at some point he can get zapped by Dr. Evil’s solar powered laser beam, and then “Ascended” Astarion or something.\n\nI don’t know what that means, but okay.\n\nI’m sure it’ll make sense at some point.\n\n![img](./img/20261009finally%20playing%20baldur's%20gate%203-3.png)\n\n![img](./img/20261009finally%20playing%20baldur's%20gate%203-4.png)\n\nGale so far is… I’m on the fence, like, he’s mostly entertaining but then he’ll say something that leaves me cringing but maybe that’s part of his appeal, he’s like just one of those people who have high natural charisma but really low wisdom, but conversationally. (I feel you, bro.)\n\nMaybe I’ll periodically blog about my BG3 thoughts.\n\nIt’s actually been such a long time since I played a game that wasn’t open-ended. Project Zomboid has been my jam for the better part of the last three years, maybe four? Nightingale and Enshrouded were pretty big time blocks as well, both are also open-ended and not very story-driven. I actually can’t remember the last game I played that had an actual storyline going on. Maybe the campaign mode in Anno 1800.\n\nSo yeah… that’s a thing that happened.\n\nTest markdown content.",
+    "slug": "2026-02-01"
+  }
+]

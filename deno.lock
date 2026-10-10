@@ -1,0 +1,218 @@
+{
+  "version": "5",
+  "specifiers": {
+    "jsr:@std/cli@^1.0.30": "1.0.32",
+    "jsr:@std/collections@^1.1.3": "1.4.0",
+    "jsr:@std/encoding@1.0.11": "1.0.11",
+    "jsr:@std/encoding@^1.0.10": "1.0.11",
+    "jsr:@std/fmt@1.0.10": "1.0.10",
+    "jsr:@std/fmt@^1.0.10": "1.0.10",
+    "jsr:@std/fmt@^1.0.5": "1.0.10",
+    "jsr:@std/front-matter@1.0.9": "1.0.9",
+    "jsr:@std/fs@1.0.24": "1.0.24",
+    "jsr:@std/fs@^1.0.11": "1.0.24",
+    "jsr:@std/fs@^1.0.24": "1.0.24",
+    "jsr:@std/html@1.0.7": "1.0.7",
+    "jsr:@std/html@^1.0.7": "1.0.7",
+    "jsr:@std/http@1.1.1": "1.1.1",
+    "jsr:@std/http@1.1.2": "1.1.2",
+    "jsr:@std/internal@^1.0.14": "1.0.14",
+    "jsr:@std/io@~0.225.2": "0.225.3",
+    "jsr:@std/log@0.224.14": "0.224.14",
+    "jsr:@std/media-types@1.1.0": "1.1.0",
+    "jsr:@std/media-types@^1.1.0": "1.1.0",
+    "jsr:@std/net@^1.0.6": "1.0.7",
+    "jsr:@std/path@1.1.6": "1.1.6",
+    "jsr:@std/path@^1.1.5": "1.1.6",
+    "jsr:@std/streams@^1.1.1": "1.2.0",
+    "jsr:@std/toml@^1.0.3": "1.0.11",
+    "jsr:@std/yaml@1.1.2": "1.1.2",
+    "jsr:@std/yaml@^1.0.5": "1.1.2",
+    "npm:exifr@7.1.3": "7.1.3"
+  },
+  "jsr": {
+    "@std/cli@1.0.32": {
+      "integrity": "188b3a100d6202d64e3f5bd3d799c7fa4f6d77f92cc65eb7f641c1fa0aa92a66"
+    },
+    "@std/collections@1.4.0": {
+      "integrity": "bd7f74966e11de11b1f0420b7e8cb7bb381d8af7872b738443b92050db28c9c0"
+    },
+    "@std/encoding@1.0.11": {
+      "integrity": "e7cef2f0b3153bccc17431e7c864a1de03a4b6d9647389c43e08aaa775d37385"
+    },
+    "@std/fmt@1.0.10": {
+      "integrity": "90dfba288802ac6de82fb31d0917eb9e4450b9925b954d5e51fc29ac07419db5"
+    },
+    "@std/front-matter@1.0.9": {
+      "integrity": "ee6201d06674cbef137dda2252f62477450b48249e7d8d9ab57a30f85ff6f051",
+      "dependencies": [
+        "jsr:@std/toml",
+        "jsr:@std/yaml@^1.0.5"
+      ]
+    },
+    "@std/fs@1.0.24": {
+      "integrity": "f3061b45b81673a2bece689da041df32d174be064c89eb6397fb5718d3fb7877",
+      "dependencies": [
+        "jsr:@std/internal",
+        "jsr:@std/path@^1.1.5"
+      ]
+    },
+    "@std/html@1.0.7": {
+      "integrity": "175c818905a6e75743c69c251395e273d82698e58cfe7dd76268d70e28b8d8fe"
+    },
+    "@std/http@1.1.1": {
+      "integrity": "e343a9a80aea07c716b91be5c79df764144430ad2dd7c9121ed7443f08dc74f7",
+      "dependencies": [
+        "jsr:@std/cli",
+        "jsr:@std/encoding@^1.0.10",
+        "jsr:@std/fmt@^1.0.10",
+        "jsr:@std/fs@^1.0.24",
+        "jsr:@std/html@^1.0.7",
+        "jsr:@std/media-types@^1.1.0",
+        "jsr:@std/net",
+        "jsr:@std/path@^1.1.5",
+        "jsr:@std/streams"
+      ]
+    },
+    "@std/http@1.1.2": {
+      "integrity": "1c0473590d5e5b75b30b2be4833c08047dd799aeea35624fd34ec58d67fc9240"
+    },
+    "@std/internal@1.0.14": {
+      "integrity": "291516b3d4c35024d6ffbc0a9df5bf4c64116e05b50012cf846710152d2ffdf7"
+    },
+    "@std/io@0.225.3": {
+      "integrity": "27b07b591384d12d7b568f39e61dff966b8230559122df1e9fd11cc068f7ddd1"
+    },
+    "@std/log@0.224.14": {
+      "integrity": "257f7adceee3b53bb2bc86c7242e7d1bc59729e57d4981c4a7e5b876c808f05e",
+      "dependencies": [
+        "jsr:@std/fmt@^1.0.5",
+        "jsr:@std/fs@^1.0.11",
+        "jsr:@std/io"
+      ]
+    },
+    "@std/media-types@1.1.0": {
+      "integrity": "c9d093f0c05c3512932b330e3cc1fe1d627b301db33a4c2c2185c02471d6eaa4"
+    },
+    "@std/net@1.0.7": {
+      "integrity": "e0b995738cfe2ed56f64591d400e55f143cff164efd690343f2deb4cf4d06d86"
+    },
+    "@std/path@1.1.6": {
+      "integrity": "c68485c2a4dfbb5ae3cc74fae4e8c4e5d874cf8a8ed12927917235c758b46cbe",
+      "dependencies": [
+        "jsr:@std/internal"
+      ]
+    },
+    "@std/streams@1.2.0": {
+      "integrity": "256b934254778f2bf45f5713b934209ff29e9b4b7fd4ec095219966813758c5f"
+    },
+    "@std/toml@1.0.11": {
+      "integrity": "e084988b872ca4bad6aedfb7350f6eeed0e8ba88e9ee5e1590621c5b5bb8f715",
+      "dependencies": [
+        "jsr:@std/collections"
+      ]
+    },
+    "@std/yaml@1.1.2": {
+      "integrity": "de612653c036749ba2044165e316f52412b0f0698afffb7ee80b5331d6d2abae"
+    }
+  },
+  "npm": {
+    "exifr@7.1.3": {
+      "integrity": "sha512-g/aje2noHivrRSLbAUtBPWFbxKdKhgj/xr1vATDdUXPOFYJlQ62Ft0oy+72V6XLIpDJfHs6gXLbBLAolqOXYRw=="
+    }
+  },
+  "remote": {
+    "https://cdn.jsdelivr.net/gh/lumeland/cms@0.15.9/auth/Basic.ts": "ba94cc33c84e5554c9a84253838d18cc0684d65ca8c17d460f1c2919c8423312",
+    "https://cdn.jsdelivr.net/gh/lumeland/cms@0.15.9/core/action.ts": "70ee6bcf8d7f0d08feb2d478ca78540f297ce0bf6a0bd74a748c1e4f03321115",
+    "https://cdn.jsdelivr.net/gh/lumeland/cms@0.15.9/core/cms.ts": "45e99fa2bdb55402e022d3603de427e2054f867e37a9e917094049e08bcfb4f5",
+    "https://cdn.jsdelivr.net/gh/lumeland/cms@0.15.9/core/collection.ts": "f5ef64af5fa10fed0f671c19be6e94552173567a364fc2097d3c560d37d97d64",
+    "https://cdn.jsdelivr.net/gh/lumeland/cms@0.15.9/core/document.ts": "39c2786f7828ebb2c5b7ecffeec67ed39a54b1002d26dfe56a7aba204a394965",
+    "https://cdn.jsdelivr.net/gh/lumeland/cms@0.15.9/core/git.ts": "0833a4622785ce02a95f63e4234690a3d36263d53793c593dc3b887f66cd8a91",
+    "https://cdn.jsdelivr.net/gh/lumeland/cms@0.15.9/core/routes/actions.ts": "7fba7bef7204c30efdaeb92f7d23366cdc07658f055f8deeec9cc1e2ded01aaa",
+    "https://cdn.jsdelivr.net/gh/lumeland/cms@0.15.9/core/routes/collection.ts": "c80fa662b646ba312d5a607d7bc2070099a048fcba18227d01ea3a0208fe23a7",
+    "https://cdn.jsdelivr.net/gh/lumeland/cms@0.15.9/core/routes/document.ts": "08cebab94ca6e3fb6d7ff30762c4abd50a73b9fb1515afe78653c52cb190a239",
+    "https://cdn.jsdelivr.net/gh/lumeland/cms@0.15.9/core/routes/index.ts": "0afa3ba6132b7d810c17ea2bf8809b55f1d4f8e85b0e41a867e23d149846c312",
+    "https://cdn.jsdelivr.net/gh/lumeland/cms@0.15.9/core/routes/main.ts": "70ea0dba8192346ea71fb2f535b5f7cb8cd9ff978cb35ece35881dc7fb5e1baf",
+    "https://cdn.jsdelivr.net/gh/lumeland/cms@0.15.9/core/routes/uploads.ts": "a23341ad47e2f8e64ce8167eb5608eedc21cf233a527052e53b60d6ff4cca0df",
+    "https://cdn.jsdelivr.net/gh/lumeland/cms@0.15.9/core/routes/versions.ts": "d95fc2365bca7e49aacd7872f2397bfffe0e957b74ff8d86a8ce2344f1f3847c",
+    "https://cdn.jsdelivr.net/gh/lumeland/cms@0.15.9/core/upload.ts": "d6b46f62a167689abaa518e10ab754c34b4b8a1fa8dbdc22e4b4ddcea3d73bbc",
+    "https://cdn.jsdelivr.net/gh/lumeland/cms@0.15.9/core/usecases/collections.ts": "0590d841d0c05d2838c61233b1e8b52462a6adea791b60a15eb93c17d100fecb",
+    "https://cdn.jsdelivr.net/gh/lumeland/cms@0.15.9/core/usecases/documents.ts": "551c84e269727e89f935bc6758225294b60b31f2573323c8c4cfaca9d6521429",
+    "https://cdn.jsdelivr.net/gh/lumeland/cms@0.15.9/core/usecases/tree.ts": "daf31cf394a5c9e5ac7e6bdb7d3a03a73a62cf21c7fff77af60b4c67c352ed6d",
+    "https://cdn.jsdelivr.net/gh/lumeland/cms@0.15.9/core/usecases/uploads.ts": "fc942b9e2f173b12bd4ff53bc658d4387f3836a557d4f57ff3f75aa13802ecac",
+    "https://cdn.jsdelivr.net/gh/lumeland/cms@0.15.9/core/usecases/versions.ts": "bfa6e097c94a2241678af3461e8535e9d3eff4f558075b82a5c7bdfdbccf780d",
+    "https://cdn.jsdelivr.net/gh/lumeland/cms@0.15.9/core/user.ts": "41af1944c1e04ba5d57dbcc4312bac9e63583fb57dfe3cb65dd0d1b623758949",
+    "https://cdn.jsdelivr.net/gh/lumeland/cms@0.15.9/core/utils/data.ts": "ff902edf31b04c8c8a136b7cdd7e4a16fc56023604badada06ff7e945670a7d9",
+    "https://cdn.jsdelivr.net/gh/lumeland/cms@0.15.9/core/utils/env.ts": "723cb01d9509e0942a32ff568314b5ac27152c94e0070dc0cd6a706c74f33a62",
+    "https://cdn.jsdelivr.net/gh/lumeland/cms@0.15.9/core/utils/path.ts": "b348d76ce893e38ac8bc5c4cd2474498b5a6e555aaaa7f5b32d710a758332257",
+    "https://cdn.jsdelivr.net/gh/lumeland/cms@0.15.9/core/utils/string.ts": "9da4797bcbc421aa436761b7a2e1ceaa161def506e380d082eb16ff350d06345",
+    "https://cdn.jsdelivr.net/gh/lumeland/cms@0.15.9/deps/exifr.ts": "6f3ef7ff9d4e90301aeb960f3b7ddda4febfd8fa736b4e7e3d4bc4d35f403b0e",
+    "https://cdn.jsdelivr.net/gh/lumeland/cms@0.15.9/deps/galo.ts": "b7a79335e00a5697fcf923724a773f73d3de285907f30c8127de1898c0c7fb37",
+    "https://cdn.jsdelivr.net/gh/lumeland/cms@0.15.9/deps/imagick.ts": "ab7cf0c3be12311fa46e297ae50dc484a672234d3d34500231d4cb5e3f2d5951",
+    "https://cdn.jsdelivr.net/gh/lumeland/cms@0.15.9/deps/std.ts": "89d777ba27a464e22c0a81b63bdd03887042c6ffbf1ca807a4ceaba2e29d156b",
+    "https://cdn.jsdelivr.net/gh/lumeland/cms@0.15.9/deps/vento.ts": "309c3f9a4733a66fec87b58cd12402caa34011b736f2bea25ac1c072a8a4df24",
+    "https://cdn.jsdelivr.net/gh/lumeland/cms@0.15.9/fields/checkbox.ts": "e18af75a1d30130189458ffde7bdb552cccd00c642f5d941f252da8a4e3250de",
+    "https://cdn.jsdelivr.net/gh/lumeland/cms@0.15.9/fields/choose-list.ts": "830bc8ef4e98900abd1e65c00450e5250d0f54f74e0f04f6181133b75fb9ed63",
+    "https://cdn.jsdelivr.net/gh/lumeland/cms@0.15.9/fields/choose.ts": "36256153e5399f71db922c9c55a9d015a66618e6f7bdecc2f371921620d0873d",
+    "https://cdn.jsdelivr.net/gh/lumeland/cms@0.15.9/fields/code.ts": "5befd70f07f65082236af869a3a716e766ad116612cb012784b2e4edc9ef7f96",
+    "https://cdn.jsdelivr.net/gh/lumeland/cms@0.15.9/fields/color.ts": "86cbe038bd921818ea8f6febbc3abde7c5e7be5b95b9daa699ff3c4a1e69bea1",
+    "https://cdn.jsdelivr.net/gh/lumeland/cms@0.15.9/fields/current-datetime.ts": "51d15d720ba1c856f40c8e3f1b527737eba0e35f6f2c992697972637f1afb58c",
+    "https://cdn.jsdelivr.net/gh/lumeland/cms@0.15.9/fields/date.ts": "1cf0e7f19751a39d2a5c1b26c52b30ec614c35048edd3bcb6b543391e0250fd9",
+    "https://cdn.jsdelivr.net/gh/lumeland/cms@0.15.9/fields/datetime.ts": "fd709355eea48e1ce80e150876476bd339b192a31e0922892fed9539bfde6cb9",
+    "https://cdn.jsdelivr.net/gh/lumeland/cms@0.15.9/fields/email.ts": "d0d35e653a4d654133ebafe0f207d7aceca368f661ff21e0dfcf140644c7c497",
+    "https://cdn.jsdelivr.net/gh/lumeland/cms@0.15.9/fields/file-list.ts": "4605a9aa19491ef2e3ec72e3bedb309d92cf5809edbe22a95427db4097908252",
+    "https://cdn.jsdelivr.net/gh/lumeland/cms@0.15.9/fields/file.ts": "9d3d6eb935b252f9a6b11fa23435584d8e8b14646fc53a02a11299a6650d3c34",
+    "https://cdn.jsdelivr.net/gh/lumeland/cms@0.15.9/fields/hidden.ts": "800792dc3eff2735581964b43e1059bbd1e2523cf2f38c65ff0522c1032f73b2",
+    "https://cdn.jsdelivr.net/gh/lumeland/cms@0.15.9/fields/list.ts": "b1f939919e5270d65aefdd5946349511817c4786877ccbe5497936161295f9e4",
+    "https://cdn.jsdelivr.net/gh/lumeland/cms@0.15.9/fields/map.ts": "b17114d09d4200a79f2d16edc11803a4df6a315e90e62fb5781d342ebf6a0074",
+    "https://cdn.jsdelivr.net/gh/lumeland/cms@0.15.9/fields/markdown.ts": "1c06eef68c4b5a3388a0deb94831a2bf7846fd238b6a2a33dfde17a64f932ac7",
+    "https://cdn.jsdelivr.net/gh/lumeland/cms@0.15.9/fields/number.ts": "1d5483bfe8f77a93dfcd440a8ea921e0516675ad079b2402db0317d9482e0a87",
+    "https://cdn.jsdelivr.net/gh/lumeland/cms@0.15.9/fields/object-list.ts": "60eacb9bf8194ed7c36998bc8eaca2f90124f27c29add24233a085cb6f830ab2",
+    "https://cdn.jsdelivr.net/gh/lumeland/cms@0.15.9/fields/object.ts": "908d7a03e21f9c6cd359fcb92f77ae9c757ca0712bc4f82ff0cc694a2e76f110",
+    "https://cdn.jsdelivr.net/gh/lumeland/cms@0.15.9/fields/radio.ts": "6ab756c399af19ce697be43f3980b1de91859b8b4b8fba30a1dd0e9d5493f937",
+    "https://cdn.jsdelivr.net/gh/lumeland/cms@0.15.9/fields/relation-list.ts": "28593392fbe8239848b7b1a30ce2e0535cb3957bcffeb533263fa09ee9842ddb",
+    "https://cdn.jsdelivr.net/gh/lumeland/cms@0.15.9/fields/relation.ts": "b2b0c035a6ede591fc19cadb3bf4827d1ea5e4f482f16cd7125de0a4864a45f6",
+    "https://cdn.jsdelivr.net/gh/lumeland/cms@0.15.9/fields/rich-text.ts": "9c0b660964bdbe982b6aadee498e5157f6ee137423872ff31f5509d13ccc3b57",
+    "https://cdn.jsdelivr.net/gh/lumeland/cms@0.15.9/fields/select.ts": "3ebe717a7833233fe77ba64d13b62444e5ec4e67366f9c38572c3a06aeb1175d",
+    "https://cdn.jsdelivr.net/gh/lumeland/cms@0.15.9/fields/text.ts": "ff0d6cd231fc991317981b4c2d730ad2cf8e2ada83f6f14ea5e9d59b66f68e74",
+    "https://cdn.jsdelivr.net/gh/lumeland/cms@0.15.9/fields/textarea.ts": "8a656176a2cd1d27091ecf373a9dfd9516df6f14c7a6a27eaec7dc59f3994fa5",
+    "https://cdn.jsdelivr.net/gh/lumeland/cms@0.15.9/fields/time.ts": "ac0cdd50c5a479636dcf99a40b36d1db2d00a19e63ee98ae1272d75f92794130",
+    "https://cdn.jsdelivr.net/gh/lumeland/cms@0.15.9/fields/url.ts": "ecfa6617e2ce19226190fd927939beec45461af5267314409ec0fff4642aa969",
+    "https://cdn.jsdelivr.net/gh/lumeland/cms@0.15.9/fields/utils.ts": "b3a4faa89038f4338b66c9b8d3603fbee4297114a7e38be92c89708a0a4869c9",
+    "https://cdn.jsdelivr.net/gh/lumeland/cms@0.15.9/mod.ts": "845c1297642581d36cf3a45907e3b3d2f537e0ec510fabafc33dc991b8eb55aa",
+    "https://cdn.jsdelivr.net/gh/lumeland/cms@0.15.9/static/common/locale.js": "72eb536ae2159e2706d27578c283305c6147cf690898f1896d4c362a3ad6ae22",
+    "https://cdn.jsdelivr.net/gh/lumeland/cms@0.15.9/storage/fs.ts": "1da2548092a7e3ff0fccbf3fd17cb6142e377fcc6808ffa57cb6046ba890eecc",
+    "https://cdn.jsdelivr.net/gh/lumeland/cms@0.15.9/storage/transformers/front_matter.ts": "cfb9b748010edb22535ba7fa8ea777d60ac727e905294e50920e7837d9d5d977",
+    "https://cdn.jsdelivr.net/gh/lumeland/cms@0.15.9/storage/transformers/json.ts": "afde08a10207587fbdfa4fcc7c6790b92b70331572810d8a70df33fe2c1013ca",
+    "https://cdn.jsdelivr.net/gh/lumeland/cms@0.15.9/storage/transformers/mod.ts": "7eda6aa39026dc1ddcf062a2426d9d657770c77eec4be00f750be6001f80d56b",
+    "https://cdn.jsdelivr.net/gh/lumeland/cms@0.15.9/storage/transformers/transform_error.js": "712c6ccdb6782c30a4646f3f8130f4a7b5bd6e34d88d8f4bbb0075ec376ce8b0",
+    "https://cdn.jsdelivr.net/gh/lumeland/cms@0.15.9/storage/transformers/yaml.ts": "a8f541990b0976a8a630cf1e2b678c8db998f79f4b97fcbf4a613a12c2b85ca6",
+    "https://cdn.jsdelivr.net/gh/lumeland/cms@0.15.9/types.ts": "1dd754903157cc66be294793c4f4a8a278d07cf1ad3b93e771aa94c176cca9ba",
+    "https://cdn.jsdelivr.net/gh/oscarotero/galo@0.3.5/mod.ts": "477dae501d7b6f50e7b17a2629fbb166e088047d308ed035dc63d8814df8836a",
+    "https://cdn.jsdelivr.net/gh/ventojs/vento@2.4.0/core/environment.ts": "1da293f6a837590ce95a829638b0ffdefd6b18ac5de54b6a55a284febf6d382f",
+    "https://cdn.jsdelivr.net/gh/ventojs/vento@2.4.0/core/errors.ts": "8606b682b465d598a394feea135dd2f84033b5ef2a61a23d116ccb782a0a547a",
+    "https://cdn.jsdelivr.net/gh/ventojs/vento@2.4.0/core/js.ts": "83084240150d7e8b83e43ec8fcf78564a8ba8599c3d517976efbb11b208903b2",
+    "https://cdn.jsdelivr.net/gh/ventojs/vento@2.4.0/core/reserved.ts": "e3ccafb4e5524b9c51fa14fa0e4bf17fd9bdd791848f17afa2aeb97835c486d1",
+    "https://cdn.jsdelivr.net/gh/ventojs/vento@2.4.0/core/tokenizer.ts": "460faa3de0e561e5046c46528c8bcbfc46b9de576af7ec8c4a8954a61a80ec76",
+    "https://cdn.jsdelivr.net/gh/ventojs/vento@2.4.0/loaders/url.ts": "8ea4c993dd63e3e62aeb07cf95c004aad0a3454a931b31688fb625db1c25f19d",
+    "https://cdn.jsdelivr.net/gh/ventojs/vento@2.4.0/loaders/utils.ts": "e15617bc4860ad91ae41316470a288d93dca918aaf34e4cd5f535c9133be6dac",
+    "https://cdn.jsdelivr.net/gh/ventojs/vento@2.4.0/plugins/default.ts": "bab4f1f3e38a6ea3673d6aaa8409ca79ec241daa07a18582b4f2549cc5532200",
+    "https://cdn.jsdelivr.net/gh/ventojs/vento@2.4.0/plugins/echo.ts": "26109b7d47d33621dd764136be665052a48b3e68aeda2bd961504702f14c829f",
+    "https://cdn.jsdelivr.net/gh/ventojs/vento@2.4.0/plugins/empty.ts": "59b9ac2e6e30db7cf505c1ade3169af0010d08bb96176ff25f10eb4ac13e217e",
+    "https://cdn.jsdelivr.net/gh/ventojs/vento@2.4.0/plugins/escape.ts": "1db6eb7b22f88bbf94d21636c9b156ec4868e10bbcfa7dc5eae7113c36ef7b8a",
+    "https://cdn.jsdelivr.net/gh/ventojs/vento@2.4.0/plugins/export.ts": "40308665aeee8edeab4618d1838c1843c03cba8a7803ed9a27fceadf7a10bbef",
+    "https://cdn.jsdelivr.net/gh/ventojs/vento@2.4.0/plugins/for.ts": "a893a3de2c5cab43d5018cb80718ea46377c172d550e7a8ead076f00c58d59bf",
+    "https://cdn.jsdelivr.net/gh/ventojs/vento@2.4.0/plugins/function.ts": "472bdbe0bffb7d38c59003b02510cf85a78a35927219bc6a02ac2d4fde8b6597",
+    "https://cdn.jsdelivr.net/gh/ventojs/vento@2.4.0/plugins/if.ts": "db13776a5b9e7988f65c27943c344bec7463c5f3162a06cc4da1a313d7109195",
+    "https://cdn.jsdelivr.net/gh/ventojs/vento@2.4.0/plugins/import.ts": "b6fb6cc922c0897d15918d10766bbbd51069336780acdc8bbf23922ed870a1b3",
+    "https://cdn.jsdelivr.net/gh/ventojs/vento@2.4.0/plugins/include.ts": "7b39ae093e4c25f0de5f0b174c00c06c30bf7092b55f00a58a64968fa8ceabde",
+    "https://cdn.jsdelivr.net/gh/ventojs/vento@2.4.0/plugins/js.ts": "f5a7fd8cc48cb1b1dc0b396e3d1fee4664cf28932dc5f5f301e38243e0e987dc",
+    "https://cdn.jsdelivr.net/gh/ventojs/vento@2.4.0/plugins/layout.ts": "9c90bb58cc5302af48b97320f8eb128b37bb29f6128d7a75c8dd7b6625b870e1",
+    "https://cdn.jsdelivr.net/gh/ventojs/vento@2.4.0/plugins/mod.ts": "2bd756b503b1d100014fa02f92e2e8d07d894c6297358232a685c4a1527908c7",
+    "https://cdn.jsdelivr.net/gh/ventojs/vento@2.4.0/plugins/set.ts": "cbe42b771a04203b6fc1c178e655fa2536ab90ae67e52c083cf7c71f37c62711",
+    "https://cdn.jsdelivr.net/gh/ventojs/vento@2.4.0/plugins/trim.ts": "8d33271327b09ffd8f569ebde85125b1324fa9538a54d6072ac97a9fb5d24264",
+    "https://cdn.jsdelivr.net/gh/ventojs/vento@2.4.0/plugins/unescape.ts": "1c56f0310c7757880df7684fc6b7bf9efd27fdb6b929b89626802f5a99cb93ee",
+    "https://cdn.jsdelivr.net/gh/ventojs/vento@2.4.0/web.ts": "57d6cbefe704b95ae85ff4931f30e1189f1cd7eaaf4c493bb37778ced7d845c6",
+    "https://cdn.jsdelivr.net/npm/@imagemagick/magick-wasm@0.0.39/dist/index.js": "42bf90c4ebd69c0ef5cd6250c6c08755c17ef7dd4be7d327fbbb8f852c52b54b"
+  }
+}

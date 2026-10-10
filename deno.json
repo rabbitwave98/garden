@@ -1,0 +1,11 @@
+
+{
+  "imports": {
+    "lume/": "https://cdn.jsdelivr.net/gh/lumeland/lume@3.3.2/",
+    "lume/cms/": "https://cdn.jsdelivr.net/gh/lumeland/cms@0.15.9/"
+  },
+  "tasks": {
+    "cms": "deno run --allow-net --allow-read --allow-write cms-server.ts",
+    "build-blog": "deno run --allow-read=content/posts --allow-write=blog-posts.json build-blog.ts"
+  }
+}

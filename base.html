@@ -1,0 +1,141 @@
+document.addEventListener("DOMContentLoaded", function () {
+  if (!document.body.classList.contains("no-layout")) {
+    document.body.insertAdjacentHTML("afterbegin", headEl);
+    document.body.insertAdjacentHTML("afterbegin", crtbgEl);
+    document.body.insertAdjacentHTML("afterbegin", bannerEl);
+    document.body.insertAdjacentHTML("afterbegin", flexwrapperEl);
+    document.body.insertAdjacentHTML("beforeend", footerEl);
+
+    const wrapperElement = document.querySelector(".flexwrapper");
+    if (wrapperElement) {
+      wrapperElement.insertAdjacentHTML("afterbegin", topbarEl);
+      wrapperElement.insertAdjacentHTML("afterbegin", sidebarEl1);
+    }
+
+    initActiveLinks();
+  }
+
+  // add your own javascript code here...
+});
+
+function initActiveLinks() {
+  const pathname = window.location.pathname;
+  [...document.querySelectorAll("a")].forEach((el) => {
+    const elHref = el
+      .getAttribute("href")
+      .replace(".html", "")
+      .replace("/public", "");
+
+    if (pathname == "/") {
+      if (elHref == "/" || elHref == "/index.html") el.classList.add("active");
+    } else {
+      if (window.location.href.includes(elHref)) el.classList.add("active");
+    }
+  });
+}
+
+function getNestingString() {
+  const currentUrl = window.location.href
+    .replace("http://", "")
+    .replace("https://", "")
+    .replace("/public/", "/");
+  const numberOfSlahes = currentUrl.split("/").length - 1;
+  if (numberOfSlahes == 1) return ".";
+  if (numberOfSlahes == 2) return "..";
+  return ".." + "/..".repeat(numberOfSlahes - 2);
+}
+
+const nesting = getNestingString();
+
+/**
+  Use ${nesting} to output a . or .. or ../.. etc according to the current page's folder depth.
+  Example: <img src="${nesting}/images/example.jpg" />
+ */
+
+const headEl = `
+<!-- 1. head -->
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=DotGothic16&family=Handjet:wght,ELSH@100..900,2&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Jacquard+12&family=Nova+Cut&family=Nova+Slim&family=Pixelify+Sans:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">   
+
+    
+  </head>
+<!-- endhead -->
+`;
+
+const crtbgEl = `
+
+<!-- 2. crtbg -->
+<div class="aesthetique">
+  <div class="crt-allthethings"> </div> 
+</div>
+<!-- end crtbg -->
+
+`;
+
+const bannerEl = `
+
+<!-- 3. banner -->
+<div class="banner"></div>
+<div class="aesthetique">
+  
+  <div class="headertop"> </div>
+  <div class="chungus"><img src="https://raw.githubusercontent.com/rabbitwave98/garden/refs/heads/main/img/wave01.png"> <img src="https://raw.githubusercontent.com/rabbitwave98/garden/refs/heads/main/img/wave02.png"> <img src="https://raw.githubusercontent.com/rabbitwave98/garden/refs/heads/main/img/wave03.png"> <img src="https://raw.githubusercontent.com/rabbitwave98/garden/refs/heads/main/img/wave04.png"></div>
+</div>
+<!-- end banner -->
+
+`;
+
+const flexwrapperEl = `
+
+<!-- 4. flexwrapper -->
+  <!-- note: /div end for flexwrapper is in the footer -->
+  <div class="aesthetique"><!-- closing tag is in the footer -->
+    <div class="flexwrapper"><!-- closing tag is in the footer -->
+<!-- endflexwrapper -->
+
+`
+
+const topbarEl = `
+
+<!-- 5. topbar -->
+<header class="flexheader">
+ 
+      <div class="disco"><div class="crt-filter"></div></div>
+    
+      <div class="thisisadigitalgarden"><div class="rabbitwave98">rabbitwave98</div><br><div class="thisisa">[ this is a digital garden. ]</div></div>
+<h1 style="line-height: 26px; margin-top: 1px;">.app to be a friendly .exe<br><div style="width: 100%; text-align: right; background-color: #d5bef270; display: inline block; position: relative; border-radius: 5px; color: #16161d; margin-left: -2.5px; padding-right: 5px; font-family: playfair display; letter-spacing: 1px; margin-bottom: -15px; text-align: center;">[ these are aesthetics maybe ]</h1>
+    
+  </header>
+<!-- end topbar -->
+
+`;
+
+const sidebarEl1 = `
+<!-- 6. sidebar -->
+ <aside class="aside aside-1">Aside 1</aside>
+<!-- end sidebar -->
+`;
+
+const mainEl = `
+
+  <article class="main"> 
+
+`
+
+const maincloseEl = `
+</article>
+`
+
+const footerEl = `
+<!-- 8. footer -->
+  <footer class="footer">Footer</footer><br><br>
+  </div><!-- closes wrapper in flexwrapper -->
+  </div><!-- closes aesthetique in flexwrapper -->
+<!-- end footer -->
+`;
+
+

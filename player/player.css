@@ -1,0 +1,298 @@
+:root {
+
+    --titlebar-gradient: linear-gradient(90deg, #651e86, #d5bef2, #d5bef2);
+    --dialog-blue: #6a1535;
+    --dialog-accent: white;
+    --titlebar-color: white;
+    --player-image: url(https://rabbitwave98.neocities.org/img/usa.jpg);
+    --surface: #e2d2f6;
+    --button-highlight: #ffffff;
+    --button-face: #e2d2f6;
+    --button-shadow: #e2d2f6;
+    --light-button-shadow: #e2d2f6;
+    --window-frame: #651e86;
+    --border-field: inset -1px -1px var(--button-highlight),
+        inset 1px 1px var(--button-shadow), inset -2px -2px var(--button-face),
+        inset 2px 2px var(--window-frame);
+}
+
+@font-face {
+    font-family: "Pixelated MS Sans Serif";
+    src: url("https://files.catbox.moe/qgjjre.woff") format("woff");
+    src: url("https://files.catbox.moe/8fwbkl.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Pixelated MS Sans Serif";
+    src: url("https://files.catbox.moe/z7csle.woff") format("woff");
+    src: url("https://files.catbox.moe/moqhx6.woff2") format("woff2");
+    font-weight: bold;
+    font-style: normal;
+}
+
+#musicplayer {
+    font-family: "Pixelated MS Sans Serif", Arial;
+    -webkit-font-smoothing: none;
+    font-size: 11px;
+    color: var(--window-frame);
+    width: fit-content;
+    border: var(--window-frame) solid 1px;
+    box-shadow: inset -1px -1px var(--window-frame), inset 1px 1px var(--button-face), inset -2px -2px var(--button-shadow), inset 2px 2px var(--button-highlight);
+    background: var(--surface);
+    padding: 3px;
+    width: 260px;
+    border-radius: 10px;
+}
+
+.title-color {
+    padding: 3px 2px 3px 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--titlebar-gradient);
+    margin-bottom: 2px;
+    font-weight: bold;
+}
+
+.actual-title {
+    color: var(--titlebar-color);
+    display: flex;
+    gap: 5px;
+}
+
+.seeking {
+    font-weight: normal;
+    font-size: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin: 12px 0;
+}
+
+.player-flex {
+    display: flex;
+    gap: 3px;
+}
+
+.player-main {
+    width: calc(100% - 100px);
+    margin-top: 1px;
+}
+
+.player-icon-holder {
+    border: 2px solid var(--surface);
+    width: 95px;
+    height: 95px;
+    padding: 1px;
+    background-image: linear-gradient(-45deg, var(--button-face) 50%, var(--window-frame) 50%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--button-shadow) var(--button-highlight) var(--button-highlight) var(--button-shadow);
+
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    border-radius: 10px;
+}
+
+.player-icon {
+    background-image: var(--player-image);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 95px;
+    height: 95px;
+    display: display;
+    border-radius: 10px;
+}
+
+/* BELOW IS LARGELY RIPPED FROM 98 CSS */
+.track-select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+    border-radius: 0;
+    box-sizing: border-box;
+    outline: 0;
+
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+
+    position: relative;
+    padding: 3px 4px;
+    padding-right: 32px;
+    background-image: url("https://loveberry.nekoweb.org/assets/musicplayer/button-down.svg");
+    background-position: top 2px right 2px;
+    background-repeat: no-repeat;
+    width: 100%;
+
+    box-shadow: var(--border-field);
+    background-color: var(--button-highlight);
+    height: 21px;
+
+    font-family: "Pixelated MS Sans Serif", Arial;
+    -webkit-font-smoothing: none;
+    font-size: 11px;
+    font-weight: lighter;
+}
+
+.track-select:focus {
+    color: var(--dialog-accent);
+    background-color: var(--dialog-blue);
+
+}
+
+.track-select:focus option {
+    color: var(--window-frame);
+    background-color: var(--button-highlight);
+    outline: 1px;
+    border: none;
+}
+
+.track-select:active {
+    background-image: url("https://loveberry.nekoweb.org/assets/musicplayer/button-down-active.svg");
+}
+
+/* input */
+#musicplayer input[type="range"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 100%;
+    background: transparent;
+}
+
+#musicplayer input[type="range"]:focus {
+    outline: none;
+}
+
+#musicplayer input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    -webkit-appearance: none;
+    height: 21px;
+    width: 11px;
+    background: url("https://loveberry.nekoweb.org/assets/musicplayer/indicator-horizontal.svg");
+    transform: translateY(-8px);
+    box-shadow: none;
+    border: none;
+}
+
+#musicplayer input[type="range"].has-box-indicator::-webkit-slider-thumb {
+    background: url("https://loveberry.nekoweb.org/assets/musicplayer/indicator-rectangle-horizontal.svg");
+    transform: translateY(-10px);
+}
+
+#musicplayer input[type="range"]::-moz-range-thumb {
+    height: 21px;
+    width: 11px;
+    border: 0;
+    border-radius: 0;
+    background: url("https://loveberry.nekoweb.org/assets/musicplayer/indicator-horizontal.svg");
+    transform: translateY(2px);
+}
+
+#musicplayer input[type="range"].has-box-indicator::-moz-range-thumb {
+    background: url("https://loveberry.nekoweb.org/assets/musicplayer/indicator-rectangle-horizontal.svg");
+    transform: translateY(0px);
+}
+
+#musicplayer input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 2px;
+    box-sizing: border-box;
+    background: var(--window-frame);
+    border-right: 1px solid var(--button-shadow);
+    border-bottom: 1px solid var(--button-shadow);
+    box-shadow: 1px 0 0 var(--button-highlight), 1px 1px 0 var(--button-highlight), 0 1px 0 var(--button-highlight), -1px 0 0 var(--light-button-shadow),
+        -1px -1px 0 var(--light-button-shadow), 0 -1px 0 var(--light-button-shadow), -1px 1px 0 var(--button-highlight), 1px -1px var(--light-button-shadow);
+}
+
+#musicplayer input[type="range"]::-moz-range-track {
+    width: 100%;
+    height: 2px;
+    box-sizing: border-box;
+    background: var(--window-frame);
+    border-right: 1px solid var(--button-shadow);
+    border-bottom: 1px solid var(--button-shadow);
+    box-shadow: 1px 0 0 var(--button-highlight), 1px 1px 0 var(--button-highlight), 0 1px 0 var(--button-highlight), -1px 0 0 var(--light-button-shadow),
+        -1px -1px 0 var(--light-button-shadow), 0 -1px 0 var(--light-button-shadow), -1px 1px 0 var(--button-highlight), 1px -1px var(--light-button-shadow);
+}
+
+.window-button {
+    background: var(--surface);
+    border: none;
+    border-radius: 0;
+    box-shadow: inset -1px -1px var(--window-frame), inset 1px 1px var(--button-highlight), inset -2px -2px var(--button-shadow), inset 2px 2px var(--button-face);
+    box-sizing: border-box;
+    color: inherit;
+    text-shadow: 0 0 var(--window-frame);
+    border-radius: 10px;
+}
+
+.window-button:active {
+    box-shadow: inset -1px -1px var(--button-highlight), inset 1px 1px var(--window-frame), inset -2px -2px var(--button-face), inset 2px 2px var(--button-shadow);
+    text-shadow: 1px 1px var(--window-frame);
+}
+
+.window-button:focus {
+    outline: 1px dotted #000;
+    outline-offset: -4px;
+}
+
+.player-buttons {
+    display: flex;
+    gap: 10px;
+    margin: 5px 5px 0 5px;
+}
+
+.player-buttons .window-button {
+    width: 33%;
+    font-size: 10px;
+    padding: 5px 10px;
+}
+
+.player-buttons .window-button svg {
+    width: 15px;
+    height: 15px;
+}
+
+.title-bar-controls {
+    display: flex;
+}
+
+.close {
+    margin-left: 2px;
+    background-image: url("https://loveberry.nekoweb.org/assets/musicplayer/close.svg");
+    background-repeat: no-repeat;
+    background-position: top 3px left 4px;
+
+    padding: 0;
+    display: block;
+    min-width: 16px;
+    min-height: 14px;
+}
+
+.minimize {
+    background-image: url("https://loveberry.nekoweb.org/assets/musicplayer/minimize.svg");
+    background-repeat: no-repeat;
+    background-position: bottom 3px left 4px;
+    padding: 0;
+    display: block;
+    min-width: 16px;
+    min-height: 14px;
+}
+
+.maximize {
+    background-image: url("https://loveberry.nekoweb.org/assets/musicplayer/maximize.svg");
+    background-repeat: no-repeat;
+    background-position: top 2px left 3px;
+    padding: 0;
+    display: block;
+    min-width: 16px;
+    min-height: 14px;
+}

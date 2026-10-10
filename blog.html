@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ｒａｂｂｉｔｗａｖｅ９８</title>
+      <meta name="description" content="this is a digital garden.">
+    <link rel="icon" href="https://rabbitwave98.neocities.org/pink-mew.gif" type="image/x-icon"/>
+    <script src="blog-layout.js"></script>
+  </head>
+<body>
+
+
+  <main>
+
+<nav class="blog-pagination" aria-label="Blog navigation">
+  <a id="blog-next" href="#" aria-label="Next blog post">Next post</a>
+  <a href="blog.html?view=list">All posts</a>
+  <a id="blog-previous" href="#" aria-label="Previous blog post">
+    Previous post
+  </a>
+</nav>
+
+<div id="blog-view">
+  <p>Loading blog...</p>
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script>
+  (async function () {
+    const view = document.getElementById("blog-view");
+    const nextLink = document.getElementById("blog-next");
+    const previousLink = document.getElementById("blog-previous");
+    const params = new URLSearchParams(window.location.search);
+
+    function disableLink(link) {
+      link.href = "#";
+      link.setAttribute("aria-disabled", "true");
+      link.setAttribute("tabindex", "-1");
+    }
+
+    function enableLink(link, href) {
+      link.href = href;
+      link.removeAttribute("aria-disabled");
+      link.removeAttribute("tabindex");
+    }
+
+    function postUrl(post) {
+      return "blog.html?post=" + encodeURIComponent(post.slug);
+    }
+
+    function makeTagLink(tag) {
+      const link = document.createElement("a");
+      link.className = "blog-tag";
+      link.href = "blog.html?tag=" + encodeURIComponent(tag);
+      link.textContent = "#" + tag;
+      return link;
+    }
+
+    function renderPost(post) {
+      const article = document.createElement("article");
+      article.className = "blog-post";
+
+      // title
+      const title = document.createElement("blogtitle");
+      title.textContent = post.title;
+      article.appendChild(title);
+
+      // date
+      if (post.date) {
+        const date = document.createElement("p");
+        date.className = "blog-post-date";
+        date.textContent = post.date;
+        article.appendChild(date);
+      }
+
+      // tags
+      if (post.tags && post.tags.length) {
+        const tags = document.createElement("div");
+        tags.className = "blog-tags";
+
+        post.tags.forEach((tag) => {
+          const link = document.createElement("a");
+          link.className = "blog-tag";
+          link.href = "blog.html?tag=" + encodeURIComponent(tag);
+          link.textContent = "#" + tag;
+          tags.appendChild(link);
+        });
+
+        article.appendChild(tags);
+      }
+
+      // post
+      const body = document.createElement("div");
+      body.className = "blog-post-content";
+      body.innerHTML = marked.parse(post.content || "");
+      article.appendChild(body);
+
+      return article;
+    }
+
+    function renderIndex(posts, heading) {
+      view.replaceChildren();
+
+      const title = document.createElement("blogtitle");
+      title.textContent = heading;
+      view.appendChild(title);
+
+      if (!posts.length) {
+        const empty = document.createElement("p");
+        empty.textContent = "No posts found.";
+        view.appendChild(empty);
+        return;
+      }
+
+      const list = document.createElement("ol");
+      list.className = "blog-index";
+
+      posts.forEach((post) => {
+        const item = document.createElement("li");
+        const link = document.createElement("a");
+
+        if (post.date) {
+          const date = document.createElement("span");
+          date.className = "blog-index-date";
+          date.textContent = post.date;
+          item.appendChild(date);
+        }
+
+        link.href = postUrl(post);
+        link.textContent = post.title;
+        item.appendChild(link);
+
+        
+
+        list.appendChild(item);
+      });
+
+      view.appendChild(list);
+    }
+
+    try {
+      const response = await fetch("blog-posts.json");
+
+      if (!response.ok) {
+        throw new Error("Could not load blog-posts.json (" +
+          response.status + ").");
+      }
+
+      const posts = await response.json();
+
+      if (!Array.isArray(posts)) {
+        throw new Error("blog-posts.json must contain an array of posts.");
+      }
+
+      posts.sort((a, b) => {
+        const dateOrder = (b.date || "").localeCompare(a.date || "");
+        return dateOrder || (a.slug || "").localeCompare(b.slug || "");
+      });
+
+      // newest list
+      const postSlug = params.get("post");
+      const tagFilter = params.get("tag");
+      const showAll = params.get("view") === "list";
+
+      if (tagFilter !== null) {
+        disableLink(nextLink);
+        disableLink(previousLink);
+
+        const matchingPosts = posts.filter((post) =>
+          (post.tags || []).some(
+            (tag) => tag.toLowerCase() === tagFilter.toLowerCase()
+          )
+        );
+
+        renderIndex(matchingPosts, "Posts tagged #" + tagFilter);
+        return;
+      }
+
+      if (showAll) {
+        disableLink(nextLink);
+        disableLink(previousLink);
+        renderIndex(posts, "All blog posts");
+        return;
+      }
+
+      if (!posts.length) {
+        disableLink(nextLink);
+        disableLink(previousLink);
+        view.textContent = "No posts yet.";
+        return;
+      }
+
+      let currentIndex = 0;
+
+      if (postSlug !== null) {
+        currentIndex = posts.findIndex((post) => post.slug === postSlug);
+
+        if (currentIndex === -1) {
+          disableLink(nextLink);
+          disableLink(previousLink);
+          view.textContent = "That blog post could not be found.";
+          return;
+        }
+      }
+
+      const post = posts[currentIndex];
+
+      // pagination
+      if (currentIndex > 0) {
+        enableLink(nextLink, postUrl(posts[currentIndex - 1]));
+      } else {
+        disableLink(nextLink);
+      }
+
+      if (currentIndex < posts.length - 1) {
+        enableLink(previousLink, postUrl(posts[currentIndex + 1]));
+      } else {
+        disableLink(previousLink);
+      }
+
+      view.replaceChildren(renderPost(post));
+    } catch (error) {
+      console.error("Blog loading error:", error);
+      view.textContent = "Unable to load blog posts: " + error.message;
+    }
+  })();
+</script>
+
+
+    
+  </main>
+
+
+</body>    
+</html>
