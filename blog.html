@@ -98,14 +98,20 @@
       body.className = "blog-post-content";
 
       body.innerHTML = marked.parse(post.content || "");
-
+      
+      const imageBase = window.location.hostname === "rabbitwave98.neocities.org"
+        ? "/content/posts/"
+        : "https://raw.githubusercontent.com/rabbitwave98/garden/refs/heads/main/content/posts/";
+      
       body.querySelectorAll("img").forEach((img) => {
         const src = img.getAttribute("src");
-
+      
         if (src && src.startsWith("./img/")) {
-          img.setAttribute("src", "/content/posts/" + src.slice(2));
+          img.setAttribute("src", imageBase + src.slice(2));
         }
       });
+
+article.appendChild(body);
 
       article.appendChild(body);
 
