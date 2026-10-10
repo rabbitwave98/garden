@@ -1,5 +1,14 @@
 [
   {
+    "title": "This is a new post test with the cms",
+    "date": "2026-10-09",
+    "tags": [
+      "tbd"
+    ],
+    "content": "**Bold text\n**\n*Italics text\n*\n~~Strikethrough~~\n",
+    "slug": "newposttest"
+  },
+  {
     "title": "Styling Testbed",
     "date": "2026-10-09",
     "tags": [

@@ -1,0 +1,17 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "deno",
+			"command": "task",
+			"args": [
+				"build-blog"
+			],
+			"problemMatcher": [
+				"$deno"
+			],
+			"label": "deno: build-blog",
+			"detail": "$ deno run --allow-read=content/posts --allow-write=blog-posts.json build-blog.ts"
+		}
+	]
+}
