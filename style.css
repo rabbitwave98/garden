@@ -23,7 +23,7 @@
   --cyan: #00d9ff;
   --mainfontcolor: #16161d;
   --pixelfont: 'silkscreen';
-  --discopic: url(https://raw.githubusercontent.com/rabbitwave98/garden/refs/heads/main/img/pink-mew.gif);
+  --discopic: url(/img/pink-mew.gif);
 
   --headerboxshadow: 0px 2px 0px white,
       0px 4px 0px var(--lavendelle),
@@ -93,7 +93,7 @@ z-index: -1;
   background-color: var(--lavendelle);
   background-blend-mode: hard-light;
   background-size: cover;
-  background-image: url(https://raw.githubusercontent.com/rabbitwave98/garden/40aac63a27e854da0e71e8a366a5b0cc53667ee2/img/moonbuddy.png);
+  background-image: url(/img/moonbuddy.png);
    -webkit-mask-image: linear-gradient(to bottom, #2c3335 80%, transparent 100%);
   mask-image: linear-gradient(to bottom, #2c3335 60%, transparent 100%);
 }
