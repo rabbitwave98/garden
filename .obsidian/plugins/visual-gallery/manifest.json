@@ -1,9 +1,0 @@
-{
-  "id": "visual-gallery",
-  "name": "Visual Gallery",
-  "version": "0.1.19",
-  "minAppVersion": "1.13.7",
-  "description": "Browse creative vaults visually, with whole-Canvas thumbnails.",
-  "author": "Yida Chen",
-  "isDesktopOnly": false
-}
