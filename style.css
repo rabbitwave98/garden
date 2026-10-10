@@ -1079,3 +1079,12 @@ em {
   padding-right: 0px;
   color: salmon;
 }
+
+/* blog post image handling */
+.blog-post-content img {
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    max-width: fit-content;
+    padding: 20px;
+}
