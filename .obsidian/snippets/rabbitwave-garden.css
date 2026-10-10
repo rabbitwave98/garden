@@ -1,0 +1,178 @@
+* {
+  --whitebg: ##fafafa;
+
+  --gardenbgsoft: #f9f9f9;
+  --red: #FF0000;
+  --green: #00FF00;
+  --blue: #0000FF;
+  --black: #000000;
+  --lavendelle: #d5bef2;
+  --charcoal: #2c3335;
+  --white: #ffffff;
+  --snow: #ffffff70;
+  --cyan: #00d9ff;
+  --discopic: url(https://raw.githubusercontent.com/rabbitwave98/garden/refs/heads/main/img/pink-mew.gif);
+--gardenbg: #16161d;
+--gardenheader: url(https://raw.githubusercontent.com/rabbitwave98/garden/refs/heads/main/img/moonbuddy.png);
+  --crtlines: repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 1px,
+        #aa00ff02,
+        rgba(0, 0, 0, 0.015) 2px);
+
+  --imagerendering: pixelated;
+
+--titlefont: 'Jacquard 12';
+  --titlesize: 
+      3.5em;
+  --glitch1: 
+    1px 1px 0 rgba(0, 0, 0, 0.75),
+  -1px -1px 0 rgba(0, 0, 0, 0.75),
+  3px 0 0 rgba(255, 71, 87, 0.75),
+  -3px 0 0 rgba(0, 217, 255, 0.75),
+  5px 0 0 rgba(0, 217, 255, 0.75),
+  -5px 0 0 rgba(255, 71, 87, 0.75);
+  --glitch2: 
+    1px 1px 0 rgba(0, 0, 0, 0.75),
+    -1px -1px 0 rgba(0, 0, 0, 0.75),
+    2px 0 0 rgba(255, 71, 87, 0.75),
+    -2px 0 0 rgba(0, 217, 255, 0.75),
+   3px 0 0 rgba(0, 217, 255, 0.75),
+    -3px 0 0 rgba(255, 71, 87, 0.75);
+
+  --headerfont: 'Jacquard 12';
+  --headerfontsize: 3em;
+  --maintextfont: 'Nova Slim';
+  --subheaderfont: 'DotGothic16';
+
+  --headerboxshadow: 0px 2px 0px white,
+      0px 4px 0px var(--lavendelle),
+      0px -2px 0px white,
+      0px -4px 0px var(--lavendelle);
+
+  --gridbg: 
+      conic-gradient(from 90deg at 0px 1px,var(--_g)),
+      conic-gradient(from 90deg at 1px 1px,var(--_g)),
+      var(--c2)
+        ;
+  --gridbgsize: 
+    var(--s) var(--s), calc(var(--s)/5) calc(var(--s)/5)
+    ;
+    --s: 50px; /* control the size*/
+    --c1: #ffffff50;
+    --c2: #d5bef2;
+    --_g: #0000 90deg,var(--c1) 0;
+
+  --rtm-markdown-editor-bg: var(--gardenbg);
+  
+  --crtlines: repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 1px,
+        #aa00ff02,
+        rgba(0, 0, 0, 0.015) 2px);
+}
+
+.workspace-leaf-content[data-type="markdown"] {
+ .cm-scroller {
+    background-color: transparent !important;
+     background-image: var(--gardenheader);
+   }
+
+.cm-sizer {
+  left: auto;
+  position: relative;
+  max-width: 90% !important;
+  width: 90% !important;
+  top: 200px;
+  z-index: 2 !important;
+  }
+
+.cm-sizer::after {
+  content: ' ';
+  font-size: 100px;
+  color: white;
+  position: absolute;
+  top: -135px;
+  height: 100px;
+  width: 100px;
+  background-image: var(--discopic);
+  background-size: cover;
+  image-rendering: pixelated;
+  /* border: 8px double pink; */
+  border-radius: 5px;
+  border: 7px double pink;
+  z-index: 0;
+}
+
+  .cm-sizer::before {
+    background: var(--gridbg);
+    background-size: var(--gridbgsize);
+    content: ' ';
+    inset: 0;
+    z-index: 0;
+  }
+
+  .inline-title {
+    --titlebg: ;
+  font-family: var(--titlefont);
+  color: var(--white);
+  text-shadow: var(--glitch1);
+font-size: var(--titlesize);
+font-weight: normal;
+  top: -125px;
+  left: 40px;
+  position: relative;
+  mix-blend-mode: normal;
+    z-index: 5 !important;
+    background: var(--gridbg);
+    background-size: var(--gridbgsize);
+    padding-left: 20px;
+    width: 80% !important;
+    
+}
+
+  .inline-title::before {
+    background: white;
+    width: 100%;
+    display: block;
+    height: auto;
+    
+  }
+
+/* metadata container */
+    .metadata-container {
+    margin-bottom: 0px;
+      top: -210px;
+}
+
+  .cm-sizer, .metadata-container {
+    background: #f3f4f6;
+  border-top: 15px solid var(--lavendelle);
+  border-radius: 10px;
+  border-left: 2px inset var(--lavendelle);
+  border-right: 2px inset var(--lavendelle);
+  border-bottom: 2px inset var(--lavendelle);
+    padding: 15px;
+  }
+
+  .cm-content {
+    top: -90px;
+    position: relative;
+  }
+  
+/* end workspace-leaf-content[markdown] */ 
+} 
+
+
+
+
+.workspace-leaf-content[data-type="css-editor-view"] {
+
+  .cm-scroller {
+    background-color: var(--whitebg);
+  }
+}
+
+

@@ -1,0 +1,480 @@
+.visual-gallery-view {
+  position: relative;
+  --vg-card-width: 250px;
+  --vg-preview-surface: #ffffff;
+  --vg-note-gradient-start: var(--vg-lightStart, #f7f7f5);
+  --vg-note-gradient-end: var(--vg-lightEnd, #eeeeeb);
+  --vg-folder-gradient-start: var(--vg-folderLightStart, #f7f7f5);
+  --vg-folder-gradient-end: var(--vg-folderLightEnd, #eeeeeb);
+  --vg-selection-ring: #2f95ff;
+  padding: 0;
+  overflow: auto;
+  background: var(--background-primary);
+}
+
+.theme-dark .visual-gallery-view {
+  --vg-preview-surface: #ffffff;
+  --vg-note-gradient-start: var(--vg-darkStart, #262626);
+  --vg-note-gradient-end: var(--vg-darkEnd, #222222);
+  --vg-folder-gradient-start: var(--vg-folderDarkStart, #262626);
+  --vg-folder-gradient-end: var(--vg-folderDarkEnd, #222222);
+}
+
+.visual-gallery-shell {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 42px clamp(24px, 4vw, 64px) 80px;
+}
+
+.visual-gallery-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: nowrap;
+  margin-bottom: 18px;
+}
+
+.visual-gallery-layout { max-width: 100%; }
+.visual-gallery-title-area { flex: 1 1 160px; min-width: 26px; overflow: hidden; }
+.visual-gallery-layout.is-fluid .visual-gallery-grid { grid-template-columns: minmax(0, 1fr); }
+.visual-gallery-layout.is-fluid button.visual-gallery-card { width: 100%; }
+
+.visual-gallery-title-area h2 {
+  margin: 0 0 5px;
+  font-size: 28px;
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.visual-gallery-title-area .visual-gallery-count {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.visual-gallery-count,
+.visual-gallery-card-meta {
+  color: var(--text-muted);
+  font-size: var(--font-ui-smaller);
+}
+
+.visual-gallery-controls {
+  display: flex;
+  align-items: center;
+  gap: var(--vg-toolbar-gap, 4px);
+  flex-wrap: nowrap;
+  flex: 0 0 auto;
+  min-width: 0;
+  justify-content: flex-end;
+  margin-left: auto;
+  max-width: calc(100% - 42px);
+  overflow: visible;
+}
+.visual-gallery-controls.is-overflowing { overflow-x: auto; scrollbar-width: none; }
+
+.visual-gallery-view button.visual-gallery-toolbar-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  flex: 0 0 var(--vg-toolbar-button-size, 28px);
+  width: var(--vg-toolbar-button-size, 28px);
+  min-width: var(--vg-toolbar-button-size, 28px);
+  height: var(--vg-toolbar-button-size, 28px);
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-radius: var(--clickable-icon-radius, 4px);
+  background: transparent;
+  box-shadow: none;
+  color: var(--text-muted);
+  cursor: pointer;
+}
+.visual-gallery-view button.visual-gallery-toolbar-button:hover {
+  background: var(--background-modifier-hover);
+  color: var(--text-normal);
+}
+.visual-gallery-view button.visual-gallery-toolbar-button.is-active {
+  color: var(--text-accent);
+}
+.visual-gallery-toolbar-button svg {
+  display: block;
+  width: min(18px, calc(var(--vg-toolbar-button-size, 28px) - 4px));
+  height: min(18px, calc(var(--vg-toolbar-button-size, 28px) - 4px));
+  pointer-events: none;
+}
+
+.visual-gallery-breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  min-height: 34px;
+  margin-bottom: 22px;
+  color: var(--text-muted);
+  overflow-x: auto;
+}
+
+.visual-gallery-crumb {
+  width: auto;
+  flex: 0 0 auto;
+  padding: 4px 7px;
+  color: var(--text-muted);
+  font-size: var(--font-ui-small);
+}
+
+.visual-gallery-crumb:hover {
+  color: var(--text-normal);
+}
+
+.visual-gallery-crumb-separator {
+  opacity: 0.45;
+}
+
+.visual-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, var(--vg-card-width));
+  gap: clamp(18px, 2vw, 28px);
+  justify-content: start;
+}
+
+/* Override Obsidian's button and button:not(.clickable-icon) defaults.
+   Grid rows stretch to the tallest title; centering would split the spare
+   height above and below shorter cards' contents. Keep previews at the top. */
+.visual-gallery-view button.visual-gallery-card {
+  /* Locked geometry contract: docs/CARD_GEOMETRY.md. All strokes are OUTSIDE
+     this single surface; state changes may only change stroke width/color. */
+  --vg-card-radius: 14px;
+  --vg-card-stroke-width: 1px;
+  --vg-card-stroke-color: var(--background-modifier-border);
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  width: var(--vg-card-width);
+  height: auto;
+  min-width: 0;
+  min-height: 0;
+  padding: 0;
+  overflow: visible;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 0;
+  appearance: none;
+  background-image: none;
+  text-align: left;
+  color: var(--text-normal);
+  background: var(--background-secondary);
+  border: 0;
+  border-radius: var(--vg-card-radius);
+  box-shadow:
+    0 2px 5px rgb(0 0 0 / 8%),
+    0 12px 30px rgb(0 0 0 / 10%);
+  cursor: pointer;
+  user-select: none;
+  white-space: normal;
+  transition: transform 120ms ease, border-color 120ms ease, box-shadow 120ms ease;
+}
+
+.visual-gallery-view button.visual-gallery-card:hover {
+  --vg-card-stroke-color: var(--background-modifier-border-hover);
+  transform: translateY(-2px);
+  box-shadow:
+    0 4px 10px rgb(0 0 0 / 10%),
+    0 18px 38px rgb(0 0 0 / 14%);
+}
+
+.visual-gallery-view button.visual-gallery-card.is-selected,
+.visual-gallery-view button.visual-gallery-card.is-selected:hover {
+  border-color: transparent;
+  box-shadow:
+    0 4px 10px rgb(0 0 0 / 10%),
+    0 18px 38px rgb(0 0 0 / 14%);
+}
+
+/* Clip the surface once, without a layout border or independently rounded
+   children that can expose wedges at the cover's upper corners. */
+.visual-gallery-card-surface {
+  box-sizing: border-box;
+  display: flex;
+  flex: 1 0 auto;
+  width: 100%;
+  min-width: 0;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: inherit;
+}
+
+.visual-gallery-view button.visual-gallery-card::before {
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  inset: 0;
+  border: 0;
+  border-radius: inherit;
+  /* A zero-blur spread follows the same curve and expands only outward.
+     Unlike CSS border widths, it is not rounded down by fractional zoom. */
+  box-shadow: 0 0 0 var(--vg-card-stroke-width) var(--vg-card-stroke-color);
+  pointer-events: none;
+  z-index: 1;
+}
+.visual-gallery-view button.visual-gallery-card.is-selected,
+.visual-gallery-view button.visual-gallery-card.is-drop-target {
+  --vg-card-stroke-width: 2px;
+  --vg-card-stroke-color: var(--vg-selection-ring);
+}
+
+/* Never stack a second rounded outline over the ordinary stroke. */
+.visual-gallery-view button.visual-gallery-card::after {
+  content: none;
+}
+
+.visual-gallery-view button.visual-gallery-card.is-selected:focus-visible {
+  outline: none;
+}
+
+.visual-gallery-view button.visual-gallery-card:focus-visible {
+  outline: 2px solid var(--interactive-accent);
+  outline-offset: 3px;
+}
+
+.visual-gallery-preview {
+  border-radius: 0;
+  flex: 0 0 auto;
+  position: relative;
+  display: grid;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  place-items: center;
+  background: linear-gradient(145deg, var(--vg-note-gradient-start), var(--vg-note-gradient-end));
+  border: 0;
+}
+
+.visual-gallery-preview img {
+  position: absolute;
+  inset: 0;
+  box-sizing: border-box;
+  pointer-events: none;
+  -webkit-user-drag: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.visual-gallery-preview.is-contain img {
+  padding: 8px;
+  object-fit: contain;
+  background: transparent;
+}
+
+/* Keep the entire board visible while extending its rendered background
+   across any aspect-ratio remainder. No dark gutters or inset padding. */
+.visual-gallery-preview.is-canvas { background: #f8f9fb; }
+.visual-gallery-preview.is-canvas img { padding: 0; }
+
+.visual-gallery-preview.is-cover img {
+  object-fit: cover;
+}
+
+.visual-gallery-preview.is-folder {
+  color: var(--interactive-accent);
+  background: linear-gradient(145deg, var(--vg-folder-gradient-start), var(--vg-folder-gradient-end));
+}
+
+.visual-gallery-placeholder-icon {
+  color: var(--text-faint);
+  font-size: 26px;
+  font-weight: 650;
+  letter-spacing: -0.04em;
+}
+
+.visual-gallery-preview-loading {
+  width: 46%;
+  height: 10px;
+  border-radius: 999px;
+  background: var(--background-modifier-hover);
+}
+
+.visual-gallery-note-preview {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  padding: 22px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 12px;
+  background: linear-gradient(145deg, var(--vg-note-gradient-start), var(--vg-note-gradient-end));
+}
+
+.visual-gallery-note-label {
+  color: var(--interactive-accent);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.visual-gallery-note-excerpt {
+  display: -webkit-box;
+  overflow: hidden;
+  color: var(--text-muted);
+  font-size: var(--font-ui-small);
+  line-height: 1.55;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+}
+
+.visual-gallery-card-details {
+  border-radius: 0;
+  border-top: 1px solid var(--background-modifier-border);
+  flex: 1 0 auto;
+  width: 100%;
+  padding: 14px 18px 16px;
+  text-align: left;
+}
+
+.visual-gallery-card-title {
+  margin-bottom: 5px;
+  overflow: hidden;
+  font-size: var(--font-ui-medium);
+  font-weight: 600;
+  text-overflow: ellipsis;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.visual-gallery-empty {
+  grid-column: 1 / -1;
+  padding: 72px 24px;
+  color: var(--text-muted);
+  text-align: center;
+  border: 1px dashed var(--background-modifier-border);
+  border-radius: 14px;
+}
+
+.visual-gallery-view button.visual-gallery-card.is-dragging {
+  opacity: 0.55;
+}
+
+.visual-gallery-view button.visual-gallery-card.is-drop-target {
+  border-color: transparent;
+}
+
+.visual-gallery-view button.visual-gallery-crumb.is-drop-target {
+  border-color: var(--vg-selection-ring);
+  box-shadow: 0 0 0 3px var(--vg-selection-ring);
+  background-color: color-mix(in srgb, var(--vg-selection-ring) 18%, var(--background-secondary));
+}
+
+.visual-gallery-error { color: var(--text-error); }
+
+.visual-gallery-view .visual-gallery-preview.is-folder > .visual-gallery-folder-icon {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+}
+.visual-gallery-view .visual-gallery-folder-icon svg { display: block; flex: 0 0 32px; width: 32px; height: 32px; padding: 0; margin: 0; }
+.visual-gallery-folder-icon.is-legacy-folder { font-size: 32px; }
+
+.visual-gallery-settings .visual-gallery-color-setting .setting-item-control {
+  overflow: visible;
+  min-height: 52px;
+  padding: 4px 2px;
+}
+.visual-gallery-settings .visual-gallery-color-setting input[type="color"] {
+  display: block;
+  box-sizing: border-box;
+  flex: 0 0 44px;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  max-width: 44px;
+  min-height: 44px;
+  max-height: 44px;
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+  border: 0;
+  border-radius: 0;
+}
+.visual-gallery-settings .visual-gallery-color-setting input[type="color"]::-webkit-color-swatch-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+}
+.visual-gallery-settings .visual-gallery-color-setting input[type="color"]::-webkit-color-swatch {
+  box-sizing: border-box;
+  flex: 0 0 32px;
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  min-height: 32px;
+  margin: 0;
+  border-radius: 50%;
+}
+.visual-gallery-settings .visual-gallery-icon-setting .setting-item-control { flex-shrink: 1; }
+.visual-gallery-icon-picker { display: flex; flex-wrap: wrap; gap: 8px; justify-content: flex-end; max-width: 250px; }
+.visual-gallery-settings button.visual-gallery-icon-choice {
+  display: flex;
+  flex: 0 0 36px;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  line-height: 1;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 8px;
+  background: var(--background-primary);
+  color: var(--text-muted);
+  box-shadow: none;
+}
+.visual-gallery-icon-choice svg { display: block; width: 20px; height: 20px; }
+.visual-gallery-icon-choice.is-legacy-folder { font-size: 24px; }
+.visual-gallery-settings button.visual-gallery-icon-choice[aria-checked="true"] { border-color: var(--interactive-accent); color: var(--interactive-accent); background: var(--background-modifier-hover); }
+
+.visual-gallery-view.is-marquee-selecting { user-select: none; cursor: crosshair; }
+.visual-gallery-view.is-marquee-selecting button.visual-gallery-card:hover { transform: none; }
+.visual-gallery-marquee {
+  position: absolute;
+  z-index: 10;
+  pointer-events: none;
+  box-sizing: border-box;
+  border: 1px solid var(--vg-selection-ring);
+  background: color-mix(in srgb, var(--vg-selection-ring) 14%, transparent);
+}
+.visual-gallery-marquee[hidden] { display: none; }
+
+@media (max-width: 720px) {
+  .visual-gallery-shell {
+    padding: 28px 18px 56px;
+  }
+
+  .visual-gallery-controls {
+    justify-content: flex-end;
+  }
+
+  .visual-gallery-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .visual-gallery-view button.visual-gallery-card {
+    width: 100%;
+  }
+}

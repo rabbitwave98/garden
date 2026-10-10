@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "enabled": true,
+  "experimentalRevealEnabled": false,
+  "language": "en",
+  "rules": [
+    {
+      "id": "rule-1791595163897-9ejdui",
+      "name": "Show folder: in:blog:blog",
+      "enabled": true,
+      "target": "folder",
+      "action": "show",
+      "scope": {
+        "type": "prefix",
+        "path": "blog"
+      },
+      "matcher": {
+        "type": "name",
+        "value": "blog"
+      },
+      "inputMode": "options",
+      "optionRange": "under",
+      "optionMatch": "name",
+      "expression": "in:blog:blog",
+      "priority": 100,
+      "updatedAt": 1791595183101
+    },
+    {
+      "id": "rule-1791595194229-d4b9rp",
+      "name": "Show file: in:blog:.md",
+      "enabled": true,
+      "target": "file",
+      "action": "show",
+      "scope": {
+        "type": "prefix",
+        "path": "blog"
+      },
+      "matcher": {
+        "type": "extension",
+        "value": ".md"
+      },
+      "inputMode": "options",
+      "optionRange": "under",
+      "optionMatch": "extension",
+      "expression": "in:blog:.md",
+      "priority": 100,
+      "updatedAt": 1791595209785
+    },
+    {
+      "id": "rule-1791595217112-3ajqnv",
+      "name": "Hide file: in:blog:.png, .jpg, .jpeg, .gif, .webp, .bmp",
+      "enabled": true,
+      "target": "file",
+      "action": "hide",
+      "scope": {
+        "type": "prefix",
+        "path": "blog"
+      },
+      "matcher": {
+        "type": "extension",
+        "value": ".png, .jpg, .jpeg, .gif, .webp, .bmp"
+      },
+      "inputMode": "options",
+      "optionRange": "under",
+      "optionMatch": "extension",
+      "expression": "in:blog:.png, .jpg, .jpeg, .gif, .webp, .bmp",
+      "priority": 200,
+      "updatedAt": 1791595248862
+    }
+  ]
+}

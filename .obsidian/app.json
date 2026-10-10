@@ -1,0 +1,16 @@
+{
+  "promptDelete": false,
+  "newLinkFormat": "relative",
+  "newFileLocation": "folder",
+  "attachmentFolderPath": "content/posts/img",
+  "showUnsupportedFiles": true,
+  "newFileFolderPath": "inbox",
+  "userIgnoreFilters": [
+    "lume/",
+    "player/",
+    "blinkies/",
+    "posts.json/",
+    "site/"
+  ],
+  "alwaysUpdateLinks": true
+}
