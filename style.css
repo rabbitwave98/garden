@@ -1085,6 +1085,6 @@ em {
     margin: 0 auto;
     text-align: center;
     display: block;
-    max-width: fit-content;
+    max-width: stretch;
     padding: 20px;
 }
