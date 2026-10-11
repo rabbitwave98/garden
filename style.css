@@ -1491,6 +1491,29 @@ a.garden-tag {
   vertical-align: top;
 }
 
+/* garden sidebar */
+.sidebar-recent-pages ul {
+  color: #6b356b;
+  padding-inline-start: 20px;
+}
+
+.sidebar-recent-pages li {
+  padding-left: 5px;
+  margin-left: 5px;
+  text-align: left;
+}
+
+.sidebar-recent-pages li a {
+  color: var(--h2color);
+  padding-left: 0px;
+  margin-left: 0px;
+}
+
+.sidebar-recent-pages  h3 {
+  background: var(--gridbg);
+  background-size: var(--gridbgsize);
+  color: #6b356b;
+}
 
 /* garden page image handling */
 .garden-page-content img {
