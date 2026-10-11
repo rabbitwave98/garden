@@ -5,10 +5,10 @@ tags:
   - bookbinding
   - stationery
 ---
-![](../content/posts/img/20261010-10.png)
+![](img/20261010-10.png)
 “Loop Stitch Binding Staples” & “Loop Staple Binding”
 
-![](../content/posts/img/20261010-11.png)
+![](img/20261010-11.png)
 These are so funky looking… just funky lil dudes on a saddlestitch?
 
 I’ve never seen these before. What the heck they’re kind of cool?

@@ -11,14 +11,14 @@ tags:
 
 I overuse crazy font converters generators too much so I might as well share some of my favorites:
 
-![](../content/posts/img/20261010-6.png)
+![](img/20261010-6.png)
 [Fancy Text Generator (𝓬𝓸𝓹𝔂 𝖆𝖓𝖉 𝓹𝓪𝓼𝓽𝓮) ― LingoJam](https://lingojam.com/FancyTextGenerator)
 
-![](../content/posts/img/20261010-7.png)
+![](img/20261010-7.png)
 [Bold and Italic Text Generators - 𝐁𝐨𝐥𝐝 𝒂𝒏𝒅 𝑖𝑡𝑎𝑙𝑖𝑐𝑠 - YayText!](https://yaytext.com/bold-italic/)
 
-![](../content/posts/img/20261010-8.png)
+![](img/20261010-8.png)
 [Text to Math Converter - textmath.hyuki.com](https://textmath.hyuki.com/)
 
-![](../content/posts/img/20261010-9.png)
+![](img/20261010-9.png)
 [Online LaTeX Equation Editor](https://latexeditor.lagrida.com/)

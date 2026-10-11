@@ -8,10 +8,10 @@ Wish I could say I remember where I found these… tiktok mostly, maybe some ran
 
 At some point I decided that I wanted to put more thought into composition in my artwork… so I started collecting all these to study.
 
-![](../content/posts/img/20261010-12.png)
-![](../content/posts/img/20261010-13.png)
-![](../content/posts/img/20261010-14.png)
-![](../content/posts/img/20261010-15.png)
-![](../content/posts/img/20261010-16.png)
-![](../content/posts/img/20261010-17.png)
-![](../content/posts/img/20261010-18.png)
+![](img/20261010-12.png)
+![](img/20261010-13.png)
+![](img/20261010-14.png)
+![](img/20261010-15.png)
+![](img/20261010-16.png)
+![](img/20261010-17.png)
+![](img/20261010-18.png)
