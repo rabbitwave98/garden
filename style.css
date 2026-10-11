@@ -23,7 +23,7 @@
   --cyan: #00d9ff;
   --mainfontcolor: #16161d;
   --pixelfont: 'silkscreen';
-  --discopic: url(./img/pink-mew.gif);
+  --discopic: url(pink-mew.gif);
 
   --headerboxshadow: 0px 2px 0px white,
       0px 4px 0px var(--lavendelle),
