@@ -13,19 +13,22 @@
 
 <body>
 
-  <nav class="garden-pagination" aria-label="Garden navigation">
-    <a id="garden-next" href="#" aria-label="Next garden page">Next page</a>
-    <a href="garden.html?view=list">All pages</a>
-    <a id="garden-previous" href="#" aria-label="Previous garden page">
-      Previous page
-    </a>
-  </nav>
   
-  <div id="garden-view">
-    <p>Loading garden...</p>
-  </div>
 
   <main>
+
+<nav class="garden-pagination" aria-label="Garden navigation">
+  <a id="garden-next" href="#" aria-label="Next garden page">Next page</a>
+  <a href="garden.html?view=list">All pages</a>
+  <a id="garden-previous" href="#" aria-label="Previous garden page">
+    Previous page
+  </a>
+</nav>
+
+<div id="garden-view">
+  <p>Loading garden...</p>
+</div>
+
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script>
       (async function () {
