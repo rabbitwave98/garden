@@ -1086,5 +1086,12 @@ em {
     text-align: center;
     display: block;
     max-width: stretch;
-    padding: 20px;
+    /* polaroid frames */
+    padding: 1px;
+    background: #a4a1a1;
+    border-radius: 10px;
+    border: 15px solid white;
+    border-bottom: 100px solid white;
+    box-shadow: 2px 2px 7px grey;
 }
+
