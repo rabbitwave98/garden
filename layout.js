@@ -80,7 +80,7 @@ const header = `
 <div class="flexwrapper">
 	<header>
 		<nav>
-			<a href="home.html">index</a>
+			<a href="landing.html">index</a>
 			<a href="about.html">about</a>
 			<a href="blog.html">blog</a>
 			<a href="garden.html">garden</a>
