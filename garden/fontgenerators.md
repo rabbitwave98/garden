@@ -11,7 +11,7 @@ tags:
 
 I overuse crazy font converters generators too much so I might as well share some of my favorites:
 
-![](img/20261010-6.png)
+![](./img/20261010-6.png)
 [Fancy Text Generator (𝓬𝓸𝓹𝔂 𝖆𝖓𝖉 𝓹𝓪𝓼𝓽𝓮) ― LingoJam](https://lingojam.com/FancyTextGenerator)
 
 ![](img/20261010-7.png)
