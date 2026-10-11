@@ -101,8 +101,8 @@
           body.innerHTML = marked.parse(page.content || "");
 
           const imageBase = window.location.hostname === "rabbitwave98.neocities.org"
-            ? "/garden/img/"
-            : "https://raw.githubusercontent.com/rabbitwave98/garden/refs/heads/main/garden/img/";
+            ? "/garden/"
+            : "https://raw.githubusercontent.com/rabbitwave98/garden/refs/heads/main/garden/";
 
           body.querySelectorAll("img").forEach((img) => {
             const src = img.getAttribute("src");
