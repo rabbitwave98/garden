@@ -1088,10 +1088,13 @@ em {
     max-width: stretch;
     /* polaroid frames */
     padding: 1px;
-    background: #a4a1a1;
+    background: var(--gridbg);
+    background-size: var(--gridbgsize);
     border-radius: 10px;
-    border: 15px solid white;
-    border-bottom: 100px solid white;
+    border: 15px solid transparent;
+    border-bottom: 100px solid transparent;
     box-shadow: 2px 2px 7px grey;
 }
+
+
 
