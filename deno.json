@@ -7,6 +7,7 @@
   "tasks": {
     "cms": "deno run --allow-net --allow-read --allow-write cms-server.ts",
     "build-blog": "deno run --allow-read=content/posts --allow-write=blog-posts.json build-blog.ts",
+    "build-garden": "deno run --allow-read=garden --allow-write=garden-pages.json build-garden.ts",
     "gitpush": "git push"
   }
 }

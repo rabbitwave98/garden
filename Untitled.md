@@ -1,0 +1,216 @@
+<script>
+  (async function () {
+    const view = document.getElementById("garden-view");
+    const nextLink = document.getElementById("garden-next");
+    const previousLink = document.getElementById("garden-previous");
+    const params = new URLSearchParams(window.location.search);
+
+    function disableLink(link) {
+      link.href = "#";
+      link.setAttribute("aria-disabled", "true");
+      link.setAttribute("tabindex", "-1");
+    }
+
+    function enableLink(link, href) {
+      link.href = href;
+      link.removeAttribute("aria-disabled");
+      link.removeAttribute("tabindex");
+    }
+
+    function pageUrl(page) {
+      return "garden.html?page=" + encodeURIComponent(page.slug);
+    }
+
+    function makeTagLink(tag) {
+      const link = document.createElement("a");
+      link.className = "garden-tag";
+      link.href = "garden.html?tag=" + encodeURIComponent(tag);
+      link.textContent = "#" + tag;
+      return link;
+    }
+
+    function renderpage(page) {
+      const article = document.createElement("article");
+      article.className = "garden-page";
+
+      // title
+      const title = document.createElement("gardentitle");
+      title.textContent = page.title;
+      article.appendChild(title);
+
+      // date
+      if (page.date) {
+        const date = document.createElement("p");
+        date.className = "garden-page-date";
+        date.textContent = page.date;
+        article.appendChild(date);
+      }
+
+      // tags
+      if (page.tags && page.tags.length) {
+        const tags = document.createElement("div");
+        tags.className = "garden-tags";
+
+        page.tags.forEach((tag) => {
+          const link = document.createElement("a");
+          link.className = "garden-tag";
+          link.href = "garden.html?tag=" + encodeURIComponent(tag);
+          link.textContent = "#" + tag;
+          tags.appendChild(link);
+        });
+
+        article.appendChild(tags);
+      }
+
+      // page
+      const body = document.createElement("div");
+      body.className = "garden-page-content";
+
+      body.innerHTML = marked.parse(page.content || "");
+      
+      const imageBase = window.location.hostname === "rabbitwave98.neocities.org"
+        ? "/garden/img/"
+        : "https://raw.githubusercontent.com/rabbitwave98/garden/refs/heads/main/garden/img/";
+      
+      body.querySelectorAll("img").forEach((img) => {
+        const src = img.getAttribute("src");
+      
+        if (src && src.startsWith("./img/")) {
+          img.setAttribute("src", imageBase + src.slice(2));
+        }
+      });
+
+article.appendChild(body);
+
+      article.appendChild(body);
+
+      return article;
+    }
+
+    function renderIndex(pages, heading) {
+      view.replaceChildren();
+
+      const title = document.createElement("gardentitle");
+      title.textContent = heading;
+      view.appendChild(title);
+
+      if (!pages.length) {
+        const empty = document.createElement("p");
+        empty.textContent = "No pages found.";
+        view.appendChild(empty);
+        return;
+      }
+
+      const list = document.createElement("ol");
+      list.className = "garden-index";
+
+      pages.forEach((page) => {
+        const item = document.createElement("li");
+        const link = document.createElement("a");
+
+        if (page.date) {
+          const date = document.createElement("span");
+          date.className = "garden-index-date";
+          date.textContent = page.date;
+          item.appendChild(date);
+        }
+
+        link.href = pageUrl(page);
+        link.textContent = page.title;
+        item.appendChild(link);
+
+        
+
+        list.appendChild(item);
+      });
+
+      view.appendChild(list);
+    }
+
+    try {
+      const response = await fetch("garden-pages.json");
+
+      if (!response.ok) {
+        throw new Error("Could not load garden-pages.json (" +
+          response.status + ").");
+      }
+
+      const pages = await response.json();
+
+      if (!Array.isArray(pages)) {
+        throw new Error("garden-pages.json must contain an array of pages.");
+      }
+
+      pages.sort((a, b) => {
+        const dateOrder = (b.date || "").localeCompare(a.date || "");
+        return dateOrder || (a.slug || "").localeCompare(b.slug || "");
+      });
+
+      // newest list
+      const pageslug = params.get("page");
+      const tagFilter = params.get("tag");
+      const showAll = params.get("view") === "list";
+
+      if (tagFilter !== null) {
+        disableLink(nextLink);
+        disableLink(previousLink);
+
+        const matchingpages = pages.filter((page) =>
+          (page.tags || []).some(
+            (tag) => tag.toLowerCase() === tagFilter.toLowerCase()
+          )
+        );
+
+        renderIndex(matchingpages, "pages tagged #" + tagFilter);
+        return;
+      }
+
+      if (showAll) {
+        disableLink(nextLink);
+        disableLink(previousLink);
+        renderIndex(pages, "All pages");
+        return;
+      }
+
+      if (!pages.length) {
+        disableLink(nextLink);
+        disableLink(previousLink);
+        view.textContent = "No pages yet.";
+        return;
+      }
+
+      let currentIndex = 0;
+
+      if (pageslug !== null) {
+        currentIndex = pages.findIndex((page) => page.slug === pageslug);
+
+        if (currentIndex === -1) {
+          disableLink(nextLink);
+          disableLink(previousLink);
+          view.textContent = "That page could not be found.";
+          return;
+        }
+      }
+
+      const page = pages[currentIndex];
+
+      // pagination
+      if (currentIndex > 0) {
+        enableLink(nextLink, pageUrl(pages[currentIndex - 1]));
+      } else {
+        disableLink(nextLink);
+      }
+
+      if (currentIndex < pages.length - 1) {
+        enableLink(previousLink, pageUrl(pages[currentIndex + 1]));
+      } else {
+        disableLink(previousLink);
+      }
+
+      view.replaceChildren(renderpage(page));
+    } catch (error) {
+      console.error("garden loading error:", error);
+      view.textContent = "Unable to load pages: " + error.message;
+    }
+  })();
+</script>

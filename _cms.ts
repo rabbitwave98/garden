@@ -28,7 +28,7 @@ fields: [
 });
 
 cms.collection({
-  name: "garden",
+  name: "pages",
   label: "Garden",
   description: "Create, edit, and delete Markdown garden entries.",
   store: "site:garden/*.md",
