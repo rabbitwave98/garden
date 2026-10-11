@@ -1,14 +1,5 @@
 [
   {
-    "title": "Styling Testbed",
-    "date": "2026-10-09",
-    "tags": [
-      "css"
-    ],
-    "content": "\n# Header 1\n\nthis one does not have the #personal tag.\n\n## Header 2\n\nTest markdown content.\n\n### Header 3\n\n#### Header 4\n\n##### Header 5\n\n###### Header 6\n\n**bold text** \n*italics text using single asterisk*\n_emphasized text using underscore_\n***bold+italics using three asterisks***\n_*italics+bold using underscore and one asterisk*_\n\n**list content**\n- list item 1\n- list item 2\n- list item 3\n\n[link text](/content/posts/test01.md)",
-    "slug": "stylingtestbed"
-  },
-  {
     "title": "missed my gorl chloe ngl",
     "date": "2026-04-07",
     "tags": [
@@ -57,6 +48,15 @@
     "slug": "on-together"
   },
   {
+    "title": "idk what i did",
+    "date": "2026-03-03",
+    "tags": [
+      "bg3"
+    ],
+    "content": "\n# when your first bg3 playthrough is heavily modded \n## [𝕚 𝕕𝕠 𝕟𝕠𝕥 𝕜𝕟𝕠𝕨 𝕨𝕙𝕒𝕥 𝕙𝕒𝕡𝕡𝕖𝕟𝕖𝕕 ]\n\n![i got a message saying dream visitor succumbed to death i guess](img/20261010.png)\n![\"that doesn't sound right, but I don't know enough about DREAM VISITOR to dispute it.\"](img/20261010-1.png)\n",
+    "slug": "i don't think that was supposed to happen"
+  },
+  {
     "title": "𝚒𝚗 𝚝𝚑𝚒𝚜 𝚜𝚎𝚛𝚟𝚎𝚛 𝚠𝚎 𝘷𝘪𝘣𝘦-𝘵𝘰𝘨𝘦𝘵𝘩𝘦𝘳",
     "date": "2026-03-03",
     "tags": [
@@ -66,13 +66,88 @@
     "slug": "𝚒𝚗 𝚝𝚑𝚒𝚜 𝚜𝚎𝚛𝚟𝚎𝚛 𝚠𝚎 𝘷𝘪𝘣𝘦-𝘵𝘰𝘨𝘦𝘵𝘩𝘦𝘳"
   },
   {
+    "title": "I almost made a neocities.",
+    "date": "2026-02-27",
+    "tags": [
+      "blog"
+    ],
+    "content": "\n ##### 𝘢𝘭𝘮𝘰𝘴𝘵. 𝘢𝘥𝘥𝘺 𝘸𝘰𝘳𝘦 𝘰𝘧𝘧 & 𝘣𝘳𝘢𝘪𝘯 𝘵𝘰𝘰 𝘴𝘮𝘰𝘰𝘵𝘩. \n\nI really want to make a neocities at some point but I feel like… it would just be redundant for my workflow (just my own workflow, not dragging neocities at all, I love it.) I just feel like I get what I want done with this site/garden just fine (although I do wish it were self-hosted or indie web as opposed to corporate-owned… _capitalist dystopia be like._)\n\nToday I think I got kinda close to attempting to wrap my head around how an [obsidian.md](http://obsidian.md) + 11ty + github + maybe neocities stack would look but I am really not a coder at all and got as far as building a github repository before the adderall wore off. Oh well.\n\nI think my smooth brain just needs things as WYSIWYG as possible when it comes to digital gardens and web stuff. I need as little friction as possible.\n\nThat said, I am still going to very happily appreciate neocities sites and gardens from a distance.\n\nThey really are such a lovely refusal of the dead internet theory. ♡\n\n### Update:\n\nI found the happy middle ground between using notion and neocities, best of both worlds.",
+    "slug": "I almost made a neocities"
+  },
+  {
+    "title": "the inevitability of talk about the weather",
+    "date": "2026-02-25",
+    "tags": [
+      "blog",
+      "language"
+    ],
+    "content": "𝘵𝘩𝘦 𝘪𝘯𝘦𝘷𝘪𝘵𝘢𝘣𝘪𝘭𝘪𝘵𝘺 𝘰𝘧 𝘵𝘢𝘭𝘬 𝘢𝘣𝘰𝘶𝘵 𝘵𝘩𝘦 𝘸𝘦𝘢𝘵𝘩𝘦𝘳 𝐰𝐡𝐞𝐧 𝐭𝐡𝐞 𝐰𝐨𝐫𝐝 𝐬𝐚𝐥𝐚𝐝 𝐢𝐬 𝐝𝐞𝐥𝐢𝐜𝐢𝐨𝐮𝐬\n\n[Head Over Heels / ヘッド・オーヴァー・ヒールズ（Tears For Fears / ティアーズ・フォー・フィアーズ）1985 : 洋楽和訳 Neverending Music](https://neverendingmusic.blog.jp/archives/30754518.html)\n\nJust thought this was cool—went searching for the Japanese-language “Tears for Fears” fandom and a Japanese translation of “Head Over Heels” because I’ve enjoyed that song so much recently. Found a neato blog where the author translates the lyrics into Japanese and goes into the nuances behind some of the chosen words for their nostalgia factor.\n\nI’m always so fascinated by the words that are chosen when someone translates prose, poetry, or lyrics into different languages.\n\nSomething that I don’t think people are always aware of us how some words have so much emotional weight and _connotations_ that don’t always occur when the phrase gets translated to another language.\n\nEven the phrase “Head Over Heels” which does not seem to have an equivalent in Japanese, is analyzed a little deeper in [another article](https://neverendingmusic.blog.jp/archives/22982033.html) by the same author, where they elaborate on the meaning. (This one explores it in reference to the song by “The Go-Go’s” who also had a song with that phrase for the title.)\n\nIn a reverse of this entire concept of phrases that don’t have exact equivalents, this all reminds me of my favorite Japanese phrase, “恋の予感” or, “koi no yokan” which I’ve seen a couple translations of.\n\nSome people translate it as a “premonition of love” but I think I favor “the inevitability of love” because premonition and inevitability have different nuances that change the impact. In English, while we have the phrase “love at first sight” it just isn’t the same—there’s something uhh… _sucrose_-flavored about it, but maybe the flavor’s just tainted by capitalism’s handling of the word.\n\nI think that there’s something far heavier about “koi no yokan” as more an inevitability of love that just tickles my cosmic horror-loving brain more, I guess.\n\nSpeaking of which, [have you ever considered love as a form of cosmic horror](https://www.youtube.com/watch?v=Yr59NQJhI0M)?\n\n_The tl;dr itinerary of this note, courtesy of mixed amphetamine salts:_\n\n“Head Over Heels” → Interest in the translation of a phrase without exact equivalent → Example of a phrase without exact equivalent (恋の予感) → Words have unique and nuanced meanings despite similarities in use-case scenarios → “koi no yokan” is not like “love at first sight” because it is intrinsically a bit darker and more existential → Love as a form of cosmic (existential) horror is a pretty rad concept, by the way.",
+    "slug": "the inevitability of talk about the weather"
+  },
+  {
+    "title": "title",
+    "date": "2026-02-20",
+    "tags": [
+      "art"
+    ],
+    "content": "![a pencil sketch of my oc august](img/20261010-2.png)\nBeen appreciating pencil sketches in their ugly rough state a bit more recently. Also, oddly getting a little better at drawing that angle of the head where the chin is slightly upturned. It’s still a pain in the ass but damn, I’ve improved a little.",
+    "slug": "he's sketchy, electric, he's an aquarius stellium"
+  },
+  {
+    "title": "down down down down",
+    "date": "2026-02-05",
+    "tags": [
+      "bg3"
+    ],
+    "content": "𝐝𝐨𝐰𝐧 𝐝𝐨𝐰𝐧 𝐝𝐨𝐰𝐧 𝐛𝐲 𝐭𝐡𝐞 𝐫𝐢𝐯𝐞𝐫 \n𝘦𝘹𝘤𝘦𝘱𝘵 \"𝘥𝘰𝘸𝘯 𝘥𝘰𝘸𝘯 𝘥𝘰𝘸𝘯\" 𝘬𝘦𝘦𝘱𝘴 𝘳𝘦𝘱𝘦𝘢𝘵𝘪𝘯𝘨 𝘧𝘰𝘳𝘦𝘷𝘦𝘳 \n\n\n![](img/20261010-5.png)\nI just really liked this shot of my party. From left to right: August, Evangeline, Astrid, and Clarence. Everything is a disaster.\n\n**October 2026 me editing in:**\nReeling at these pictures of my first save file (this one got borked before Act 2 and I started over from the beginning, keeping only August & Evangeline.) Seeing August with the elf ears was wild (his BG3!AU is *not* an elf, I just didn't know how to fully respec my party members back then.)",
+    "slug": "down down down down"
+  },
+  {
+    "title": "i'm love him your honor",
+    "date": "2026-02-05",
+    "tags": [
+      "bg3",
+      "baedirak"
+    ],
+    "content": "\n![](img/20261010-3.png)\n###### 𝘳𝘦𝘤𝘳𝘶𝘪𝘵𝘢𝘣𝘭𝘦 𝘢𝘣𝘣𝘺 𝘮𝘰𝘥 𝘸𝘩𝘦𝘯??\nthe most entertaining characters are always the ones with only like five minutes of screen time fr ",
+    "slug": "i'm love him your honor"
+  },
+  {
     "title": "finally playing baldur's gate 3",
     "date": "2026-02-01",
     "tags": [
       "gaming",
       "bg3"
     ],
-    "content": "Man, do I wish I was more into BG3, because that fandom is eating well. I can’t remember ever being all too hyped for it when it first came out and I think I got like… _immediate_ hype fatigue. Or maybe even reactive hype fatigue (except within the first week of release. So… unfairly expedited hype fatigue, maybe.) It’s definitely not a bad game, I actually have a lot of respect for it, I think I just never clicked with it. I’m hoping that with this playthrough, maybe I’ll finally find something to love about it, but it’s one of those things where I looked at all of the primary characters and just didn’t feel a pull to any of them. They’re not bad in any way, I just never really got that spark of, _“Oh my god, I love this little bitch!”_ that I often feel moments before finding a new fictional special interest. \n\n![img](./img/20261009finally%20playing%20baldur's%20gate%203-1.png)\n\n\nSo this time around, I’m playing it heavily modded just to go through the storyline and finally get to know the characters and see if I wind up liking them by the end.\n\nI’ve got them essentially cosplaying my OCs for a little extra dopamine to keep me motivated. Shadowheart is currently cosplaying my OC, Krist, and I low-key love it, though I feel like when I find Karlach, I’m going to swap the Krist cosplay over to her. From what I’ve seen of Karlach, I feel like she and Krist have the most similar personalities.\n\nI turned Tav into Evangeline and Astarion into her twin brother, August. I went into this knowing that Astarion is a bit sassy by nature and figured that’d align well with August, who is also an aristocratic little shit. But holy _fck,_ I did not expect Astarion to be _that catty._ It’s almost too much to see him cosplaying August. One of my friends once suggested that Gortash might be a better fit and I’m low-key thinking maybe I might swap them later, we’ll see.\n\nLast night I played up to the point where they recruit Gale. So far, my party is just Tav, Astarion, Shadowheart, and Gale. Shadowheart is kind of my favorite so far, she just feels the most like a vibe. But I’m also low-key getting tsundere or even yandere vibes. I don’t know much about her storyline yet, I’ve seen spoilers but didn’t care enough to commit them to memory so it’s a spoiler _semi_-free playthrough, somehow.\n\nI think at one point, someone told me the entire Astarion storyline but it really went in one ear and out the other, _rip_.\n\n![img](./img/20261009finally%20playing%20baldur's%20gate%203-2.png)\n\nSomething-something, vampire, his boss sings a musical bit, homeboy’s avoidant-attachment as heck due to trauma from said musical boss guy, at some point he can get zapped by Dr. Evil’s solar powered laser beam, and then “Ascended” Astarion or something.\n\nI don’t know what that means, but okay.\n\nI’m sure it’ll make sense at some point.\n\n![img](./img/20261009finally%20playing%20baldur's%20gate%203-3.png)\n\n![img](./img/20261009finally%20playing%20baldur's%20gate%203-4.png)\n\nGale so far is… I’m on the fence, like, he’s mostly entertaining but then he’ll say something that leaves me cringing but maybe that’s part of his appeal, he’s like just one of those people who have high natural charisma but really low wisdom, but conversationally. (I feel you, bro.)\n\nMaybe I’ll periodically blog about my BG3 thoughts.\n\nIt’s actually been such a long time since I played a game that wasn’t open-ended. Project Zomboid has been my jam for the better part of the last three years, maybe four? Nightingale and Enshrouded were pretty big time blocks as well, both are also open-ended and not very story-driven. I actually can’t remember the last game I played that had an actual storyline going on. Maybe the campaign mode in Anno 1800.\n\nSo yeah… that’s a thing that happened.\n\nTest markdown content.",
+    "content": "Man, do I wish I was more into BG3, because that fandom is eating well. I can’t remember ever being all too hyped for it when it first came out and I think I got like… _immediate_ hype fatigue. Or maybe even reactive hype fatigue (except within the first week of release. So… unfairly expedited hype fatigue, maybe.) It’s definitely not a bad game, I actually have a lot of respect for it, I think I just never clicked with it. I’m hoping that with this playthrough, maybe I’ll finally find something to love about it, but it’s one of those things where I looked at all of the primary characters and just didn’t feel a pull to any of them. They’re not bad in any way, I just never really got that spark of, _“Oh my god, I love this little bitch!”_ that I often feel moments before finding a new fictional special interest. \n\n![so wild seeing this earlier evangeline face, I wound up using a different head mod for her](./img/20261009finally%20playing%20baldur's%20gate%203-1.png)\n\n\nSo this time around, I’m playing it heavily modded just to go through the storyline and finally get to know the characters and see if I wind up liking them by the end.\n\nI’ve got them essentially cosplaying my OCs for a little extra dopamine to keep me motivated. Shadowheart is currently cosplaying my OC, Krist, and I low-key love it, though I feel like when I find Karlach, I’m going to swap the Krist cosplay over to her. From what I’ve seen of Karlach, I feel like she and Krist have the most similar personalities.\n\nI turned Tav into Evangeline and Astarion into her twin brother, August. I went into this knowing that Astarion is a bit sassy by nature and figured that’d align well with August, who is also an aristocratic little shit. But holy _fck,_ I did not expect Astarion to be _that catty._ It’s almost too much to see him cosplaying August. One of my friends once suggested that Gortash might be a better fit and I’m low-key thinking maybe I might swap them later, we’ll see.\n\nLast night I played up to the point where they recruit Gale. So far, my party is just Tav, Astarion, Shadowheart, and Gale. Shadowheart is kind of my favorite so far, she just feels the most like a vibe. But I’m also low-key getting tsundere or even yandere vibes. I don’t know much about her storyline yet, I’ve seen spoilers but didn’t care enough to commit them to memory so it’s a spoiler _semi_-free playthrough, somehow.\n\nI think at one point, someone told me the entire Astarion storyline but it really went in one ear and out the other, _rip_.\n\n![my reaction to most of the things astarion says (not listening)](./img/20261009finally%20playing%20baldur's%20gate%203-2.png)\n\nSomething-something, vampire, his boss sings a musical bit, homeboy’s avoidant-attachment as heck due to trauma from said musical boss guy, at some point he can get zapped by Dr. Evil’s solar powered laser beam, and then “Ascended” Astarion or something.\n\nI don’t know what that means, but okay.\n\nI’m sure it’ll make sense at some point.\n\n![gale's intro was interesting](./img/20261009finally%20playing%20baldur's%20gate%203-3.png)\n\n![i love that this was an option](./img/20261009finally%20playing%20baldur's%20gate%203-4.png)\n\nGale so far is… I’m on the fence, like, he’s mostly entertaining but then he’ll say something that leaves me cringing but maybe that’s part of his appeal, he’s like just one of those people who have high natural charisma but really low wisdom, but conversationally. (I feel you, bro.)\n\nMaybe I’ll periodically blog about my BG3 thoughts.\n\nIt’s actually been such a long time since I played a game that wasn’t open-ended. Project Zomboid has been my jam for the better part of the last three years, maybe four? Nightingale and Enshrouded were pretty big time blocks as well, both are also open-ended and not very story-driven. I actually can’t remember the last game I played that had an actual storyline going on. Maybe the campaign mode in Anno 1800.\n\nSo yeah… that’s a thing that happened.",
     "slug": "𝚏𝚒𝚗𝚊𝚕𝚕𝚢 𝚙𝚕𝚊𝚢𝚒𝚗𝚐 𝚋𝚊𝚕𝚍𝚞𝚛'𝚜 𝚐𝚊𝚝𝚎 𝟹"
+  },
+  {
+    "title": "psychological reactance",
+    "date": "2026-02-01",
+    "tags": [
+      "blog"
+    ],
+    "content": "𝐥𝐞𝐚𝐫𝐧𝐞𝐝 𝐚 𝐭𝐞𝐫𝐦 𝐭𝐨𝐝𝐚𝐲: 𝐩𝐬𝐲𝐜𝐡𝐨𝐥𝐨𝐠𝐢𝐜𝐚𝐥 𝐫𝐞𝐚𝐜𝐭𝐚𝐧𝐜𝐞 \n𝘩𝘦𝘭𝘭𝘢 𝘯𝘰𝘵 𝘢 𝘷𝘪𝘣𝘦 𝘵𝘣𝘩 \n\nWhile writing that entry about BG3, I was trying to think of the word for that feeling I got and when looking into it, learned about “psychological reactance” and felt like writing it down. Ultimately, this isn’t the thing that I was feeling in my disinterest in BG3 (which was just _hype fatigue_.) Though it was still kind of an interesting topic.\n\n[Psychological reactance](https://en.wikipedia.org/wiki/Reactance_\\(psychology\\)) is essentially when you feel like you’re being told what to like, or aggressively influenced and so you get this knee-jerk, negative emotional response as a result.\n\nKind of neat, I guess, that there’s a word for the feeling.\n\nAnother term I came across was “_overexposure effect_” or “_overexposure backlash_” where when you can’t escape something that’s crazy popular, the repeated exposure starts to feel grating. I definitely think that I’ve felt this for other crazy popular media that felt inescapable in online fandom spaces, though I can’t remember any off the top of my head at the moment (if it were memorable to me, I’d remember it.)\n\nOne of the things I’ve been trying to check myself on in the last few years is unprompted negativity and contrarian behaviors. (I have a lot more to say about that topic and my feels about it, but I’ll save that for another entry.)\n\nSo part of this is that I really want to give things a fair chance and not just default to hating things because they’re inescapable.\n\nUnplugging from social media has really helped with this, I think—if I’m not in those populated fandom spaces, I don’t get bombarded with the overexposure.\n\nWhich like… damn, that’s also a whole topic that one could make a write-up about, too. How many genuinely good movies, games or books have I skipped out on because the overexposure and hype fatigue had me hating on it?\n\nI guess it’s just another reason why I’m so done with social media platforms these days and would rather just… idk, hang out in a more individual, closed space like this with only a handful of friends’ neocities pages to check out every now and then.\n\nThe less I see how massive a fandom is, the less likely I am to feel hype fatigue or even that “reactance” feeling.\n\nI just keep thinking about how at the end of it all, I don’t want to look back on my life and see how much I deprived myself of fond memories and experiences solely because I was stuck in a negative or contrarian-adjacent mindset.\n\nThe last time I went to an anime convention, I saw a lot of fandoms where the booths in the Artists Alley were doing punch cards. It was actually such a wholesome, community-operated little thing and I thought it was so cool to see in action, even if I was _really_ not into any of the fandoms that were doing it. Luckily, I found one set of people doing it for Final Fantasy XIV and had a blast collecting as many punch card stickers as I could.\n\nBut like… imagine how much more fun I could have had if I were even just a casual enjoyer of the other fandoms doing it?\n\nThen there’s how much fanart and fanworks that get made by the sheer armies of fans in those large fandoms. I always say that BG3 fans are “eating good” because there’s no shortage of fanworks to enjoy if you’re into it.\n\nI think I’d like my default reaction to most things be closer to neutral/positive, even if I only ever become a casual or outskirts enjoyer of any huge media. I dunno, man, it just feels like a more pleasant space to be in.",
+    "slug": "psychological reactance"
+  },
+  {
+    "title": "what to do if you're too high",
+    "date": "2026-01-31",
+    "tags": [
+      "blog",
+      "shitposting"
+    ],
+    "content": "𝐜𝐫𝐞𝐞𝐩 𝐛𝐮𝐭 𝐢𝐭’𝐬 𝐣𝐮𝐬𝐭 “𝐰𝐡𝐞𝐧 𝐲𝐨𝐮 𝐰𝐞𝐫𝐞 𝐡𝐞𝐫𝐞 𝐛𝐞𝐟𝐨𝐫𝐞” 𝐫𝐞𝐩𝐞𝐚𝐭𝐞𝐝 𝐨𝐧 𝐚 𝐥𝐨𝐨𝐩 𝐛𝐞𝐜𝐚𝐮𝐬𝐞 𝐡𝐛 𝐜𝐚𝐧’𝐭 𝐫𝐞𝐦𝐞𝐦𝐛𝐞𝐫 𝐰𝐡𝐚𝐭 𝐡𝐚𝐩𝐩𝐞𝐧𝐞𝐝 𝐰𝐡𝐞𝐧 𝐲𝐨𝐮 𝐰𝐞𝐫𝐞 𝐡𝐞𝐫𝐞 𝐛𝐞𝐟𝐨𝐫𝐞\n\n![shitposting again](img/20261010-4.png)",
+    "slug": "what to do if you're too high"
+  },
+  {
+    "title": "this is where a title goes",
+    "date": "2026-01-30",
+    "tags": [
+      "blog"
+    ],
+    "content": "I’ve been wanting to make some sort of digital garden page for a while but never got around to it. For some reason, today, I just kinda feel like doing it. No idea what’s gonna go here. It’s probably just gonna become a glorified blog, to be honest.\n\nI think I should wander around the internet looking at other digital gardens a little more.",
+    "slug": "this is where a title goes"
   }
 ]
