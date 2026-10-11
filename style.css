@@ -21,6 +21,8 @@
   --charcoal: #2c3335;
   --white: #ffffff;
   --cyan: #00d9ff;
+  --mainfont: 'Nova Slim';
+  --mainfontsize: 16px;
   --mainfontcolor: #16161d;
   --pixelfont: 'silkscreen';
   --discopic: url(pink-mew.gif);
@@ -1080,6 +1082,35 @@ em {
   color: salmon;
 }
 
+.blog-post-content main a {
+  font-family: 'Handjet';
+  font-size: 16px;
+  text-transform: uppercase;
+  color: var(--h2color);
+  text-shadow: 1px 1px 0 #6b356b,
+    1px -1px 0 #6b356b,
+    -1px 1px 0 #6b356b,
+    -1px -1px 0 #6b356b,
+    2px 0px 0 #6b356b,
+    0px 1px 0 #6b356b,
+    -1px 0px 0 #6b356b,
+    0px -1px 0 #6b356b,
+    1px 1px 0px #6b356b;
+  background: var(--gridbg);
+  background-size: var(--gridbgsize);
+  line-height: 16px;
+  padding: 5px;
+  border-radius: 10px;
+  border: 3px double var(--white);
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: help;
+}
+
+.blog-post-content main a:hover {
+  color: var(--mewpink1);
+}
+
 /* blog post image handling */
 .blog-post-content img {
     margin: 0 auto;
@@ -1094,6 +1125,7 @@ em {
     border: 15px solid transparent;
     border-bottom: 15px solid transparent;
     box-shadow: 2px 2px 7px grey;
+    margin-bottom: 20px;
 }
 
 /* garden page */
@@ -1529,5 +1561,34 @@ a.garden-tag {
   border: 15px solid transparent;
   border-bottom: 15px solid transparent;
   box-shadow: 2px 2px 7px grey;
+  margin-bottom: 20px;
 }
 
+.garden-page-content main a {
+  font-family: 'Handjet';
+  font-size: 16px;
+  text-transform: uppercase;
+  color: var(--h2color);
+  text-shadow: 1px 1px 0 #6b356b,
+    1px -1px 0 #6b356b,
+    -1px 1px 0 #6b356b,
+    -1px -1px 0 #6b356b,
+    2px 0px 0 #6b356b,
+    0px 1px 0 #6b356b,
+    -1px 0px 0 #6b356b,
+    0px -1px 0 #6b356b,
+    1px 1px 0px #6b356b;
+  background: var(--gridbg);
+  background-size: var(--gridbgsize);
+  line-height: 16px;
+  padding: 5px;
+  border-radius: 10px;
+  border: 3px double var(--white);
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: help;
+}
+
+.garden-page-content main a:hover {
+  color: var(--mewpink1);
+}
